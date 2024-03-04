@@ -1,0 +1,674 @@
+###############################################################################
+#
+# IAR UBROF Linker V8.10.1.1784/W64 for Microchip AVR     17/Jul/2023  18:18:19
+# Copyright 2017-2023 IAR Systems AB.
+#
+#    Target Cpu    =  AVR
+#    Map file      =
+#        B:\MQ_Summer_Internship_2023\Project\362\Debug\List\362.map
+#    Output file 1 =
+#        B:\MQ_Summer_Internship_2023\Project\362\Debug\Exe\362.d90
+#                  =  Format: debug
+#                  =  UBROF version 12.0.0
+#                  =  Using library modules for C-SPY (-rt)
+#    Command line  =
+#        -f B:\MQ_Summer_Internship_2023\Project\362\Debug\Exe\362.d90.rsp
+#        (B:\MQ_Summer_Internship_2023\Project\362\Debug\Obj\adc.r90
+#        B:\MQ_Summer_Internship_2023\Project\362\Debug\Obj\btn.r90
+#        B:\MQ_Summer_Internship_2023\Project\362\Debug\Obj\cpanel.r90
+#        B:\MQ_Summer_Internship_2023\Project\362\Debug\Obj\gpio.r90
+#        B:\MQ_Summer_Internship_2023\Project\362\Debug\Obj\led.r90
+#        B:\MQ_Summer_Internship_2023\Project\362\Debug\Obj\main.r90
+#        B:\MQ_Summer_Internship_2023\Project\362\Debug\Obj\pins.r90
+#        B:\MQ_Summer_Internship_2023\Project\362\Debug\Obj\sos.r90 --output
+#        B:\MQ_Summer_Internship_2023\Project\362\Debug\Exe\362.d90 -l
+#        B:\MQ_Summer_Internship_2023\Project\362\Debug\List\362.map -xaems
+#        "-IC:\Program Files\IAR Systems\Embedded Workbench 9.1\avr\lib\\" --f
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        9.1\avr/src/template/cfgm324pb.xcl" (-D_..X_INTVEC_SIZE=CC
+#        -D_..X_FLASH_END=7FFF -D_..X_FLASH_NEND=_..X_FLASH_END
+#        -D_..X_SRAM_BASE=100 -D_..X_SRAM_TBASE=0 -D_..X_SRAM_TSIZE=0
+#        -D_..X_SRAM_END=8FF -D_..X_EXT_SRAM_BASE=_..X_SRAM_END
+#        -D_..X_EXT_SRAM_SIZE=0 -D_..X_EXT_ROM_BASE=_..X_SRAM_END
+#        -D_..X_EXT_ROM_SIZE=0 -D_..X_EXT_NV_BASE=_..X_SRAM_END
+#        -D_..X_EXT_NV_SIZE=0 -D_..X_EEPROM_START=0 -D_..X_EEPROM_END=3FF)
+#        -D_..X_HEAP_SIZE=0 -D_..X_TINY_HEAP_SIZE=0 -D_..X_NEAR_HEAP_SIZE=20
+#        -D_..X_FAR_HEAP_SIZE=0 -D_..X_HUGE_HEAP_SIZE=0 -D_..X_CSTACK_SIZE=20
+#        -D_..X_RSTACK_SIZE=20 -D_..X_FLASH_CODE_END=_..X_FLASH_END --f
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        9.1\avr/src/template/cfg3soim.xcl" (-ca90 -w29
+#        "-Z(CODE)INTVEC=0-(_..X_INTVEC_SIZE-1)"
+#        "-Z(CODE)TINY_F=_..X_FLASH_BASE-FF"
+#        "-Z(CODE)NEAR_F=_..X_FLASH_BASE-_..X_FLASH_NEND"
+#        "-Z(CODE)SWITCH=_..X_FLASH_BASE-_..X_FLASH_NEND"
+#        "-Z(CODE)DIFUNCT=_..X_FLASH_BASE-_..X_FLASH_NEND"
+#        "-Z(CODE)CODE=_..X_FLASH_BASE-_..X_FLASH_END"
+#        "-P(CODE)FAR_F=[_..X_FLASH_BASE-_..X_FLASH_END]/10000"
+#        "-Z(CODE)INITTAB=_..X_FLASH_BASE-_..X_FLASH_END"
+#        "-Z(CODE)HUGE_F=_..X_FLASH_BASE-_..X_FLASH_END"
+#        "-Z(CODE).iar.locale_table,.iar.locale_encoding,__iar_tls$$INIT_DATA=_..X_FLASH_BASE-_..X_FLASH_END"
+#        "-Z(CODE)TINY_ID=_..X_FLASH_BASE-_..X_FLASH_END"
+#        "-Z(CODE)NEAR_ID=_..X_FLASH_BASE-_..X_FLASH_END"
+#        "-Z(CODE)CHECKSUM#_..X_FLASH_END"
+#        "-Z(DATA)TINY_I,TINY_Z,TINY_N=_..X_SRAM_TBASE:+_..X_SRAM_TSIZE"
+#        "-Z(DATA)CSTACK+_..X_CSTACK_SIZE=_..X_CSTACK_BASE-_..X_CSTACK_END"
+#        "-Z(DATA)HEAP+_..X_HEAP_SIZE=_..X_SRAM_BASE-_..X_SRAM_END"
+#        "-Z(DATA)IOSTREAM_N#_..X_SRAM_BASE-_..X_SRAM_END"
+#        "-Z(DATA)NEAR_HEAP+_..X_NEAR_HEAP_SIZE=_..X_SRAM_BASE-_..X_SRAM_END"
+#        "-Z(DATA)RSTACK+_..X_RSTACK_SIZE=_..X_RSTACK_BASE-_..X_RSTACK_END"
+#        "-Z(DATA)NEAR_I,NEAR_Z,NEAR_N=_..X_SRAM_BASE-_..X_SRAM_END"
+#        "-Z(DATA)__iar_tls$$DATA=_..X_SRAM_BASE-_..X_SRAM_END"
+#        "-Z(XDATA)EEPROM_I,EEPROM_N=_..X_EEPROM_START-_..X_EEPROM_END")
+#        -D_..X_FLASH_BASE=_..X_INTVEC_SIZE
+#        "-h'1895'(CODE)0-(_..X_INTVEC_SIZE-1)"
+#        -D_..X_CSTACK_BASE=_..X_SRAM_BASE -D_..X_CSTACK_END=_..X_SRAM_END
+#        -D_..X_RSTACK_BASE=_..X_SRAM_BASE -D_..X_RSTACK_END=_..X_SRAM_END -rt
+#        --entry __program_start --text_out locale)
+#
+###############################################################################
+
+
+
+
+
+
+                ****************************************
+                *                                      *
+                *            PROGRAM ENTRY             *
+                *                                      *
+                ****************************************
+
+  ADDRESS     SPACE  TYPE         MODULE
+  -------     -----  ----         ------
+  0x0000045E  CODE   Relocatable  ?C_STARTUP
+
+
+
+
+                ****************************************
+                *                                      *
+                *            RUNTIME MODEL             *
+                *                                      *
+                ****************************************
+
+  ATTRIBUTE                   VALUE
+  ---------                   -----
+  R4                          REG
+  R5                          REG
+  __64bit_doubles             disabled
+  __SystemLibrary             DLib
+  __architecture              *
+  __cpu                       3
+  __cpu_name                  ATmega324PB
+  __dlib_full_locale_support  0
+  __dlib_version              6
+  __enhanced_core             enabled
+  __enhanced_core_mul         enabled
+  __has_elpm                  false
+  __memory_model              2
+  __mex                       disabled
+  __rt_version                3
+  __tiny_avr                  false
+  __vtable_memory             __nearflash
+
+
+                ****************************************
+                *                                      *
+                *    AUTOMATIC SYMBOL REDIRECTIONS     *
+                *                                      *
+                ****************************************
+
+                   There are no automatic symbol redirections.
+
+
+
+                ****************************************
+                *                                      *
+                *   AUTOMATICALLY SELECTED LIBRARIES   *
+                *                                      *
+                ****************************************
+
+                  C:\Program Files\IAR Systems\Embedded Workbench 9.1\avr\lib\dlib\dlAVR-3s-ec_mul-sf-n.r90
+
+
+
+                ****************************************
+                *                                      *
+                *              ENTRY LIST              *
+                *                                      *
+                ****************************************
+
+ENTRY                    SPACE  ADDRESS     KIND  TYPE  MODULE
+-----                    -----  -------     ----  ----  ------
+PINA                               N/A      Loc         btn
+DDRA                               N/A      Loc         led
+PORTA                              N/A      Loc         led
+PORTC                              N/A      Loc         led
+ADC                                N/A      Loc         main
+ADCH                               N/A      Loc         main
+ADCL                               N/A      Loc         main
+_..X_HUGE_HEAP_SIZE      CODE   0x00000000  Pub         ?ABS_ENTRY_MOD [0]
+_..X_FAR_HEAP_SIZE       CODE   0x00000000  Pub         ?ABS_ENTRY_MOD [0]
+_..X_TINY_HEAP_SIZE      CODE   0x00000000  Pub         ?ABS_ENTRY_MOD [0]
+_..X_HEAP_SIZE           CODE   0x00000000  Pub         ?ABS_ENTRY_MOD [0]
+_..X_EEPROM_START        CODE   0x00000000  Pub         ?ABS_ENTRY_MOD [0]
+_..X_EXT_NV_SIZE         CODE   0x00000000  Pub         ?ABS_ENTRY_MOD [0]
+_..X_EXT_ROM_SIZE        CODE   0x00000000  Pub         ?ABS_ENTRY_MOD [0]
+_..X_EXT_SRAM_SIZE       CODE   0x00000000  Pub         ?ABS_ENTRY_MOD [0]
+_..X_SRAM_TSIZE          CODE   0x00000000  Pub         ?ABS_ENTRY_MOD [0]
+_..X_SRAM_TBASE          CODE   0x00000000  Pub         ?ABS_ENTRY_MOD [0]
+?RESET                   CODE   0x00000000  Pub         ?RESET [1]
+_..X_RSTACK_SIZE         CODE   0x00000020  Pub         ?ABS_ENTRY_MOD [0]
+_..X_CSTACK_SIZE         CODE   0x00000020  Pub         ?ABS_ENTRY_MOD [0]
+_..X_NEAR_HEAP_SIZE      CODE   0x00000020  Pub         ?ABS_ENTRY_MOD [0]
+ADC_ISR::??INTVEC 96     CODE   0x00000060  Pub         main
+_..X_FLASH_BASE          CODE   0x000000CC  Pub         ?ABS_ENTRY_MOD [0]
+_..X_INTVEC_SIZE         CODE   0x000000CC  Pub         ?ABS_ENTRY_MOD [0]
+_..X_RSTACK_BASE         CODE   0x00000100  Pub         ?ABS_ENTRY_MOD [0]
+_..X_CSTACK_BASE         CODE   0x00000100  Pub         ?ABS_ENTRY_MOD [0]
+_..X_SRAM_BASE           CODE   0x00000100  Pub         ?ABS_ENTRY_MOD [0]
+ADC_Init                 CODE   0x00000102  Pub   Code  adc
+ADC_Read                 CODE   0x000001DC  Pub   Code  adc
+ADC_get_result           CODE   0x00000210  Pub   Code  adc
+ADC_coversion            CODE   0x0000021A  Pub   Code  adc
+led_PowerOn              CODE   0x00000236  Pub   Code  led
+led_PowerOff             CODE   0x00000284  Pub   Code  led
+led_set_as_output        CODE   0x000002D2  Pub   Code  led
+led_PowerOff_all         CODE   0x00000334  Pub   Code  led
+led_init                 CODE   0x00000354  Pub   Code  led
+ADC_ISR                  CODE   0x00000376  Pub   Code  main
+main                     CODE   0x00000388  Pub   Code  main
+set_pin                  CODE   0x000003E0  Pub   Code  pins
+reset_pin                CODE   0x000003F4  Pub   Code  pins
+_..X_EEPROM_END          CODE   0x000003FF  Pub         ?ABS_ENTRY_MOD [0]
+set_direction            CODE   0x0000040A  Pub   Code  pins
+__DebugBreak             CODE   0x00000442  Pub   Code  ?__dbg_break [1]
+__exit                   CODE   0x00000444  Pub   Code  ?__exit [1]
+_exit                    CODE   0x0000045A  Pub   Code  ?_exit [1]
+__program_start          CODE   0x0000045E  Pub         ?C_STARTUP [1]
+?C_STARTUP               CODE   0x0000045E  Pub         ?C_STARTUP [1]
+__RESTART                CODE   0x0000045E  Pub         ?C_STARTUP [1]
+?call_low_level_init     CODE   0x0000046A  Pub         ?C_STARTUP [1]
+?need_segment_init       CODE   0x0000046E  Pub         ?C_STARTUP [1]
+?cstartup_call_main      CODE   0x00000476  Pub         ?C_STARTUP [1]
+exit                     CODE   0x00000482  Pub   Code  ?exit [1]
+?C_SHL_L01               CODE   0x00000486  Pub         ?C_SHL_L01 [1]
+?UC_SHR_L01              CODE   0x00000490  Pub         ?UC_SHR_L01 [1]
+?S_SHL_L02               CODE   0x0000049E  Pub         ?S_SHL_L02 [1]
+GET_INFO_S               CODE   0x000004A4  Loc         ?xV_SWITCH_L06 [1]
+GET_INFO_C               CODE   0x000004A6  Loc         ?xV_SWITCH_L06 [1]
+?SV_SWITCH_L06           CODE   0x000004B2  Pub         ?xV_SWITCH_L06 [1]
+P_0_S                    CODE   0x000004B8  Loc         ?xV_SWITCH_L06 [1]
+CHECK_LOW_LIMIT          CODE   0x000004BE  Loc         ?xV_SWITCH_L06 [1]
+__low_level_init         CODE   0x0000052A  Pub   Code  ?low_level_init [1]
+__segment_init           CODE   0x0000052E  Pub   Code  ?segment_init [1]
+?<Segment init: NEAR_I>  CODE   0x0000056C  Pub         main
+_..X_RSTACK_END          CODE   0x000008FF  Pub         ?ABS_ENTRY_MOD [0]
+_..X_CSTACK_END          CODE   0x000008FF  Pub         ?ABS_ENTRY_MOD [0]
+_..X_EXT_NV_BASE         CODE   0x000008FF  Pub         ?ABS_ENTRY_MOD [0]
+_..X_EXT_ROM_BASE        CODE   0x000008FF  Pub         ?ABS_ENTRY_MOD [0]
+_..X_EXT_SRAM_BASE       CODE   0x000008FF  Pub         ?ABS_ENTRY_MOD [0]
+_..X_SRAM_END            CODE   0x000008FF  Pub         ?ABS_ENTRY_MOD [0]
+_..X_FLASH_CODE_END      CODE   0x00007FFF  Pub         ?ABS_ENTRY_MOD [0]
+_..X_FLASH_NEND          CODE   0x00007FFF  Pub         ?ABS_ENTRY_MOD [0]
+_..X_FLASH_END           CODE   0x00007FFF  Pub         ?ABS_ENTRY_MOD [0]
+__?EECR                  DATA   0x0000001F  Pub         adc
+_A_PINA                  DATA   0x00000020  Pub   Data  adc
+__?EEDR                  DATA   0x00000020  Pub         adc
+PINA                     DATA   0x00000020  Loc         adc
+_A_DDRA                  DATA   0x00000021  Pub   Data  adc
+__?EEARL                 DATA   0x00000021  Pub         adc
+DDRA                     DATA   0x00000021  Loc         adc
+__?EEARH                 DATA   0x00000022  Pub         adc
+_A_PORTA                 DATA   0x00000022  Pub   Data  btn
+PORTA                    DATA   0x00000022  Loc         btn
+_A_DDRB                  DATA   0x00000024  Pub   Data  led
+DDRB                     DATA   0x00000024  Loc         led
+_A_PORTB                 DATA   0x00000025  Pub   Data  led
+PORTB                    DATA   0x00000025  Loc         led
+_A_PINC                  DATA   0x00000026  Pub   Data  btn
+PINC                     DATA   0x00000026  Loc         btn
+_A_DDRC                  DATA   0x00000027  Pub   Data  led
+DDRC                     DATA   0x00000027  Loc         led
+_A_PORTC                 DATA   0x00000028  Pub   Data  btn
+PORTC                    DATA   0x00000028  Loc         btn
+_A_DDRD                  DATA   0x0000002A  Pub   Data  led
+DDRD                     DATA   0x0000002A  Loc         led
+_A_PORTD                 DATA   0x0000002B  Pub   Data  led
+PORTD                    DATA   0x0000002B  Loc         led
+_A_SREG                  DATA   0x0000005F  Pub   Data  main
+SREG                     DATA   0x0000005F  Loc         main
+_A_ADC                   DATA   0x00000078  Pub   Data  adc
+ADC                      DATA   0x00000078  Loc         adc
+ADCL                     DATA   0x00000078  Loc         adc
+ADCH                     DATA   0x00000079  Loc         adc
+_A_ADCSRA                DATA   0x0000007A  Pub   Data  adc
+ADCSRA                   DATA   0x0000007A  Loc         adc
+_A_ADMUX                 DATA   0x0000007C  Pub   Data  adc
+ADMUX                    DATA   0x0000007C  Loc         adc
+middleValue              DATA   0x00000140  Pub   Data  main
+
+[0] = Command line (linker generated)
+[1] = C:\Program Files\IAR Systems\Embedded Workbench 9.1\avr\lib\dlib\dlAVR-3s-ec_mul-sf-n.r90
+
+
+                ****************************************
+                *                                      *
+                *              MODULE MAP              *
+                *                                      *
+                ****************************************
+
+Linker generated:
+  Module: ?ABS_ENTRY_MOD
+
+      Absolute module symbols:
+        _..X_RSTACK_END      0x000008FF  Pub
+        _..X_RSTACK_BASE     0x00000100  Pub
+        _..X_CSTACK_END      0x000008FF  Pub
+        _..X_CSTACK_BASE     0x00000100  Pub
+        _..X_FLASH_BASE      0x000000CC  Pub
+        _..X_FLASH_CODE_END  0x00007FFF  Pub
+        _..X_RSTACK_SIZE     0x00000020  Pub
+        _..X_CSTACK_SIZE     0x00000020  Pub
+        _..X_HUGE_HEAP_SIZE  0x00000000  Pub
+        _..X_FAR_HEAP_SIZE   0x00000000  Pub
+        _..X_NEAR_HEAP_SIZE  0x00000020  Pub
+        _..X_TINY_HEAP_SIZE  0x00000000  Pub
+        _..X_HEAP_SIZE       0x00000000  Pub
+        _..X_EEPROM_END      0x000003FF  Pub
+        _..X_EEPROM_START    0x00000000  Pub
+        _..X_EXT_NV_SIZE     0x00000000  Pub
+        _..X_EXT_NV_BASE     0x000008FF  Pub
+        _..X_EXT_ROM_SIZE    0x00000000  Pub
+        _..X_EXT_ROM_BASE    0x000008FF  Pub
+        _..X_EXT_SRAM_SIZE   0x00000000  Pub
+        _..X_EXT_SRAM_BASE   0x000008FF  Pub
+        _..X_SRAM_END        0x000008FF  Pub
+        _..X_SRAM_TSIZE      0x00000000  Pub
+        _..X_SRAM_TBASE      0x00000000  Pub
+        _..X_SRAM_BASE       0x00000100  Pub
+        _..X_FLASH_NEND      0x00007FFF  Pub
+        _..X_FLASH_END       0x00007FFF  Pub
+        _..X_INTVEC_SIZE     0x000000CC  Pub
+**************************************************************
+File: B:\MQ_Summer_Internship_2023\Project\362\Debug\Obj\adc.r90
+  Module: adc
+       Segment part 1, ABSOLUTE [root]
+       Address: DATA 0x0000007C Size: 0x1 Align: 1(0)
+       Ref by:   ADC_Init
+      _A_ADMUX             0x0000007C  Pub
+      ADMUX                0x0000007C  Loc
+    --------------------------------------------------
+       Segment part 2, ABSOLUTE [root]
+       Address: DATA 0x0000007A Size: 0x1 Align: 1(0)
+       Ref by:   ADC_coversion
+                 ADC_Read
+                 ADC_Init
+      _A_ADCSRA            0x0000007A  Pub
+      ADCSRA               0x0000007A  Loc
+    --------------------------------------------------
+       Segment part 3, ABSOLUTE [root]
+       Address: DATA 0x00000078 Size: 0x2 Align: 1(0)
+       Ref by:   ADC_ISR (main)
+                 ADC_get_result
+      _A_ADC               0x00000078  Pub
+      ADC                  0x00000078  Loc
+      ADCH                 0x00000079  Loc
+      ADCL                 0x00000078  Loc
+    --------------------------------------------------
+       Segment part 4, ABSOLUTE [root]
+       Address: DATA 0x00000021 Size: 0x1 Align: 1(0)
+       Ref by:   led_set_as_output (led)
+                 ADC_Init
+      _A_DDRA              0x00000021  Pub
+      DDRA                 0x00000021  Loc
+    --------------------------------------------------
+       Segment part 5, ABSOLUTE [root]
+       Address: DATA 0x00000020 Size: 0x1 Align: 1(0)
+       Ref by:   ADC_Init
+      _A_PINA              0x00000020  Pub
+      PINA                 0x00000020  Loc
+    --------------------------------------------------
+       Segment part 12, CODE
+       Address: CODE 0x00000102 Size: 0xDA Align: 2(1)
+      ADC_Init             0x00000102  Pub  Ref by:   main (main)
+    --------------------------------------------------
+       Segment part 13, CODE
+       Address: CODE 0x000001DC Size: 0x34 Align: 2(1)
+      ADC_Read             0x000001DC  Pub  Ref by:   main (main)
+    --------------------------------------------------
+       Segment part 14, CODE
+       Address: CODE 0x00000210 Size: 0xA Align: 2(1)
+       Ref by:   ADC_coversion
+      ADC_get_result       0x00000210  Pub
+    --------------------------------------------------
+       Segment part 15, CODE
+       Address: CODE 0x0000021A Size: 0x1C Align: 2(1)
+      ADC_coversion        0x0000021A  Pub  Ref by:   main (main)
+    --------------------------------------------------
+       Segment part 6, ABSOLUTE [root]
+       Address: DATA 0x0000001F Size: 0x0 Align: 1(0)
+      __?EECR              0x0000001F  Pub
+    --------------------------------------------------
+       Segment part 7, ABSOLUTE [root]
+       Address: DATA 0x00000020 Size: 0x0 Align: 1(0)
+      __?EEDR              0x00000020  Pub
+    --------------------------------------------------
+       Segment part 8, ABSOLUTE [root]
+       Address: DATA 0x00000021 Size: 0x0 Align: 1(0)
+      __?EEARL             0x00000021  Pub
+    --------------------------------------------------
+       Segment part 9, ABSOLUTE [root]
+       Address: DATA 0x00000022 Size: 0x0 Align: 1(0)
+      __?EEARH             0x00000022  Pub
+**************************************************************
+File: B:\MQ_Summer_Internship_2023\Project\362\Debug\Obj\btn.r90
+  Module: btn
+       Segment part 1, ABSOLUTE [root]
+       Address: DATA 0x00000028 Size: 0x1 Align: 1(0)
+       Ref by:   led_PowerOff (led)
+                 led_PowerOn (led)
+      _A_PORTC             0x00000028  Pub
+      PORTC                0x00000028  Loc
+    --------------------------------------------------
+       Segment part 2, ABSOLUTE [root]
+       Address: DATA 0x00000026 Size: 0x1 Align: 1(0)
+      _A_PINC              0x00000026  Pub
+      PINC                 0x00000026  Loc
+    --------------------------------------------------
+       Segment part 3, ABSOLUTE [root]
+       Address: DATA 0x00000022 Size: 0x1 Align: 1(0)
+       Ref by:   led_PowerOff (led)
+                 led_PowerOn (led)
+      _A_PORTA             0x00000022  Pub
+      PORTA                0x00000022  Loc
+**************************************************************
+File: B:\MQ_Summer_Internship_2023\Project\362\Debug\Obj\cpanel.r90
+  Module: cpanel
+**************************************************************
+File: B:\MQ_Summer_Internship_2023\Project\362\Debug\Obj\gpio.r90
+  Module: gpio
+**************************************************************
+File: B:\MQ_Summer_Internship_2023\Project\362\Debug\Obj\led.r90
+  Module: led
+       Segment part 1, ABSOLUTE [root]
+       Address: DATA 0x0000002B Size: 0x1 Align: 1(0)
+       Ref by:   led_PowerOff
+                 led_PowerOn
+      _A_PORTD             0x0000002B  Pub
+      PORTD                0x0000002B  Loc
+    --------------------------------------------------
+       Segment part 2, ABSOLUTE [root]
+       Address: DATA 0x0000002A Size: 0x1 Align: 1(0)
+       Ref by:   led_set_as_output
+      _A_DDRD              0x0000002A  Pub
+      DDRD                 0x0000002A  Loc
+    --------------------------------------------------
+       Segment part 4, ABSOLUTE [root]
+       Address: DATA 0x00000027 Size: 0x1 Align: 1(0)
+       Ref by:   led_set_as_output
+      _A_DDRC              0x00000027  Pub
+      DDRC                 0x00000027  Loc
+    --------------------------------------------------
+       Segment part 5, ABSOLUTE [root]
+       Address: DATA 0x00000025 Size: 0x1 Align: 1(0)
+       Ref by:   led_PowerOff
+                 led_PowerOn
+      _A_PORTB             0x00000025  Pub
+      PORTB                0x00000025  Loc
+    --------------------------------------------------
+       Segment part 6, ABSOLUTE [root]
+       Address: DATA 0x00000024 Size: 0x1 Align: 1(0)
+       Ref by:   led_set_as_output
+      _A_DDRB              0x00000024  Pub
+      DDRB                 0x00000024  Loc
+    --------------------------------------------------
+       Segment part 15, CODE
+       Address: CODE 0x00000236 Size: 0x4E Align: 2(1)
+       Ref by:   Segment part 24
+      led_PowerOn          0x00000236  Pub  Ref by:   main (main)
+    --------------------------------------------------
+       Segment part 16, CODE
+       Address: CODE 0x00000284 Size: 0x4E Align: 2(1)
+       Ref by:   Segment part 25
+                 led_PowerOff_all
+      led_PowerOff         0x00000284  Pub
+    --------------------------------------------------
+       Segment part 17, CODE
+       Address: CODE 0x000002D2 Size: 0x62 Align: 2(1)
+       Ref by:   Segment part 26
+                 led_init
+      led_set_as_output    0x000002D2  Pub
+    --------------------------------------------------
+       Segment part 18, CODE
+       Address: CODE 0x00000334 Size: 0x20 Align: 2(1)
+       Ref by:   led_init
+      led_PowerOff_all     0x00000334  Pub  Ref by:   main (main)
+    --------------------------------------------------
+       Segment part 23, CODE
+       Address: CODE 0x00000354 Size: 0x22 Align: 2(1)
+      led_init             0x00000354  Pub  Ref by:   main (main)
+    --------------------------------------------------
+       Segment part 24, SWITCH
+       Address: CODE 0x000000CC Size: 0x12 Align: 2(1)
+       Ref by:   led_PowerOn
+    --------------------------------------------------
+       Segment part 25, SWITCH
+       Address: CODE 0x000000DE Size: 0x12 Align: 2(1)
+       Ref by:   led_PowerOff
+    --------------------------------------------------
+       Segment part 26, SWITCH
+       Address: CODE 0x000000F0 Size: 0x12 Align: 2(1)
+       Ref by:   led_set_as_output
+**************************************************************
+File: B:\MQ_Summer_Internship_2023\Project\362\Debug\Obj\main.r90
+  Module: main
+       Segment part 2, ABSOLUTE [root]
+       Address: DATA 0x0000005F Size: 0x1 Align: 1(0)
+       Ref by:   main
+      _A_SREG              0x0000005F  Pub
+      SREG                 0x0000005F  Loc
+    --------------------------------------------------
+       Segment part 13, NEAR_I
+       Address: DATA 0x00000140 Size: 0x2 Align: 1(0)
+       Ref by:   main
+      middleValue          0x00000140  Pub
+    --------------------------------------------------
+       Segment part 15, CODE
+       Address: CODE 0x00000376 Size: 0x12 Align: 2(1)
+       Ref by:   ADC_ISR::??INTVEC 96
+      ADC_ISR              0x00000376  Pub
+    --------------------------------------------------
+       Segment part 16, CODE
+       Address: CODE 0x00000388 Size: 0x58 Align: 2(1)
+      main                 0x00000388  Pub  Ref by:   ?cstartup_call_main (?C_STARTUP)
+    --------------------------------------------------
+       Segment part 7, INTVEC [root]
+       Address: CODE 0x00000000 Size: 0x64 Align: 2(1)
+      ADC_ISR::??INTVEC 96  0x00000060  Pub
+    --------------------------------------------------
+       Segment part 12, INITTAB
+       Address: CODE 0x0000056C Size: 0x6 Align: 1(0)
+       Ref by:   middleValue
+      ?<Segment init: NEAR_I>  0x0000056C  Pub
+    --------------------------------------------------
+       Segment part 14, NEAR_ID
+       Address: CODE 0x00000572 Size: 0x2 Align: 1(0)
+       Ref by:   middleValue
+**************************************************************
+File: B:\MQ_Summer_Internship_2023\Project\362\Debug\Obj\pins.r90
+  Module: pins
+       Segment part 7, CODE
+       Address: CODE 0x000003E0 Size: 0x14 Align: 2(1)
+      set_pin              0x000003E0  Pub  Ref by:   led_PowerOff (led)
+    --------------------------------------------------
+       Segment part 8, CODE
+       Address: CODE 0x000003F4 Size: 0x16 Align: 2(1)
+      reset_pin            0x000003F4  Pub  Ref by:   led_PowerOn (led)
+    --------------------------------------------------
+       Segment part 9, CODE
+       Address: CODE 0x0000040A Size: 0x38 Align: 2(1)
+      set_direction        0x0000040A  Pub  Ref by:   led_set_as_output (led)
+**************************************************************
+File: B:\MQ_Summer_Internship_2023\Project\362\Debug\Obj\sos.r90
+  Module: sos
+**************************************************************
+File: C:\Program Files\IAR Systems\Embedded Workbench 9.1\avr\lib\dlib\dlAVR-3s-ec_mul-sf-n.r90
+  Module: ?__dbg_break
+       Segment part 3, CODE
+       Address: CODE 0x00000442 Size: 0x2 Align: 2(1)
+      __DebugBreak         0x00000442  Pub  Ref by:   __exit (?__exit)
+  ============================================================
+  Module: ?__exit
+       Segment part 3, CODE
+       Address: CODE 0x00000444 Size: 0x16 Align: 2(1)
+      __exit               0x00000444  Pub  Ref by:   Segment part 6 (?_exit)
+  ============================================================
+  Module: ?_exit
+       Segment part 0, CODE
+       Address: CODE 0x0000045A Size: 0x0 Align: 2(1)
+      _exit                0x0000045A  Pub  Ref by:   exit (?exit)
+                                                      ?cstartup_call_main (?C_STARTUP)
+    --------------------------------------------------
+       Segment part 6, CODE
+       Address: CODE 0x0000045A Size: 0x4 Align: 2(1)
+       Ref by:   _exit
+  ============================================================
+  Module: ?RESET
+       Segment part 0, INTVEC [root]
+       Address: CODE 0x00000000 Size: 0x4 Align: 2(1)
+      ?RESET               0x00000000  Pub  Ref by:   Segment part 2 (?C_STARTUP)
+  ============================================================
+  Module: ?C_STARTUP
+       Segment part 2, CODE
+       Address: CODE 0x0000045E Size: 0x0 Align: 2(1)
+      __program_start      0x0000045E  Pub  Ref by:   Absolute parts (?ABS_ENTRY_MOD)
+      ?C_STARTUP           0x0000045E  Pub  Ref by:   ?RESET (?RESET)
+      __RESTART            0x0000045E  Pub
+    --------------------------------------------------
+       Segment part 5, CODE
+       Address: CODE 0x0000045E Size: 0xC Align: 2(1)
+       Ref by:   Segment part 2
+    --------------------------------------------------
+       Segment part 7, CODE
+       Address: CODE 0x0000046A Size: 0x4 Align: 2(1)
+       Ref by:   Segment part 5
+      ?call_low_level_init  0x0000046A  Pub
+    --------------------------------------------------
+       Segment part 8, CODE
+       Address: CODE 0x0000046E Size: 0x8 Align: 2(1)
+      ?need_segment_init   0x0000046E  Pub  Ref by:   ?<Segment init: NEAR_I> (main)
+    --------------------------------------------------
+       Segment part 11, CODE
+       Address: CODE 0x00000476 Size: 0xC Align: 2(1)
+       Ref by:   ?call_low_level_init
+      ?cstartup_call_main  0x00000476  Pub
+  ============================================================
+  Module: ?exit
+       Segment part 3, CODE
+       Address: CODE 0x00000482 Size: 0x4 Align: 2(1)
+      exit                 0x00000482  Pub  Ref by:   ?cstartup_call_main (?C_STARTUP)
+  ============================================================
+  Module: ?C_SHL_L01
+       Segment part 0, CODE
+       Address: CODE 0x00000486 Size: 0xA Align: 2(1)
+      ?C_SHL_L01           0x00000486  Pub  Ref by:   ADC_Read (adc)
+                                                      ADC_Init (adc)
+  ============================================================
+  Module: ?UC_SHR_L01
+       Segment part 0, CODE
+       Address: CODE 0x00000490 Size: 0xA Align: 2(1)
+      ?UC_SHR_L01          0x00000490  Pub  Ref by:   ADC_coversion (adc)
+                                                      ADC_Read (adc)
+  ============================================================
+  Module: ?S_SHL_L02
+       Segment part 0, CODE
+       Address: CODE 0x0000049A Size: 0xA Align: 2(1)
+      ?S_SHL_L02           0x0000049E  Pub  Ref by:   set_direction (pins)
+                                                      reset_pin (pins)
+                                                      set_pin (pins)
+  ============================================================
+  Module: ?xV_SWITCH_L06
+       Segment part 1, CODE
+       Address: CODE 0x000004A4 Size: 0x2 Align: 2(1)
+       Ref by:   ?SV_SWITCH_L06
+      GET_INFO_S           0x000004A4  Loc
+    --------------------------------------------------
+       Segment part 2, CODE
+       Address: CODE 0x000004A6 Size: 0xC Align: 2(1)
+       Ref by:   GET_INFO_S
+      GET_INFO_C           0x000004A6  Loc
+    --------------------------------------------------
+       Segment part 4, CODE
+       Address: CODE 0x000004B2 Size: 0x6 Align: 2(1)
+      ?SV_SWITCH_L06       0x000004B2  Pub  Ref by:   led_set_as_output (led)
+                                                      led_PowerOff (led)
+                                                      led_PowerOn (led)
+    --------------------------------------------------
+       Segment part 5, CODE
+       Address: CODE 0x000004B8 Size: 0x6 Align: 2(1)
+       Ref by:   ?SV_SWITCH_L06
+      P_0_S                0x000004B8  Loc
+    --------------------------------------------------
+       Segment part 7, CODE
+       Address: CODE 0x000004BE Size: 0x6C Align: 2(1)
+       Ref by:   P_0_S
+      CHECK_LOW_LIMIT      0x000004BE  Loc
+  ============================================================
+  Module: ?PROLOGUE_L09
+  ============================================================
+  Module: ?EPILOGUE_B_L09
+  ============================================================
+  Module: ?REGISTER_CGREGR4_L10
+  ============================================================
+  Module: ?REGISTER_CGREGR5_L10
+  ============================================================
+  Module: ?low_level_init
+       Segment part 3, CODE
+       Address: CODE 0x0000052A Size: 0x4 Align: 2(1)
+      __low_level_init     0x0000052A  Pub  Ref by:   ?call_low_level_init (?C_STARTUP)
+  ============================================================
+  Module: ?segment_init
+       Segment part 3, CODE
+       Address: CODE 0x0000052E Size: 0x3E Align: 2(1)
+      __segment_init       0x0000052E  Pub  Ref by:   ?need_segment_init (?C_STARTUP)
+**************************************************************
+Linker generated:
+  Module: ?FILLER_BYTES
+       Segment part 1, INTVEC
+       Address: CODE 0x00000000 Size: 0x64 Align: 1(0)
+    --------------------------------------------------
+       Segment part 0, ?FILL1
+       Address: CODE 0x00000064 Size: 0x68 Align: 1(0)
+
+
+                ****************************************
+                *                                      *
+                *      SEGMENTS IN ADDRESS ORDER       *
+                *                                      *
+                ****************************************
+
+SEGMENT   SPACE     START/END ADDRESS      SIZE  TYPE  ALIGN
+-------   -----   ---------------------    ----  ----  -----
+INTVEC    CODE   0x00000000 - 0x00000063   0x64   com   2(1)
+?FILL1    CODE   0x00000064 - 0x000000CB   0x68   rel   1(0)
+SWITCH    CODE   0x000000CC - 0x00000101   0x36   rel   2(1)
+CODE      CODE   0x00000102 - 0x0000056B  0x46A   rel   2(1)
+INITTAB   CODE   0x0000056C - 0x00000571    0x6   rel   1(0)
+NEAR_ID   CODE   0x00000572 - 0x00000573    0x2   rel   1(0)
+CSTACK    DATA   0x00000100 - 0x0000011F   0x20   dse   1(0)
+RSTACK    DATA   0x00000120 - 0x0000013F   0x20   dse   1(0)
+NEAR_I    DATA   0x00000140 - 0x00000141    0x2   rel   1(0)
+ABSOLUTE  DATA         0x0000001F                 abs   1(0)
+          DATA         0x00000020
+          DATA   0x00000024 - 0x00000028    0x5
+          DATA   0x0000002A - 0x0000002B    0x2
+          DATA   0x0000005F - 0x0000005F    0x1
+          DATA   0x00000078 - 0x0000007A    0x3
+          DATA   0x0000007C - 0x0000007C    0x1
+
+ 1'292 bytes of CODE memory (+             104 range fill )
+    66 bytes of DATA memory (+ 15 absolute )
+
+Errors: none
+Warnings: none

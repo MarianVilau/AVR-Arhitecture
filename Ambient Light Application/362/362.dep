@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <fileVersion>5</fileVersion>
+    <fileChecksum>514576428</fileChecksum>
+    <configuration>
+        <name>Debug</name>
+        <outputs>
+            <file>$PROJ_DIR$\Debug\Obj\main.r90</file>
+            <file>$PROJ_DIR$\Debug\List\adc.i</file>
+            <file>$PROJ_DIR$\Debug\List\362.map</file>
+            <file>$PROJ_DIR$\Debug\List\cpanel.i</file>
+            <file>$PROJ_DIR$\Debug\List\btn.i</file>
+            <file>$TOOLKIT_DIR$\lib\dlib\dlAVR-3s-ec_mul-sf-n.r90</file>
+            <file>$PROJ_DIR$\Debug\List\gpio.i</file>
+            <file>$PROJ_DIR$\Debug\List\pins.i</file>
+            <file>$PROJ_DIR$\..\35x\main.c</file>
+            <file>$TOOLKIT_DIR$\src\template\cfgm324pb.xcl</file>
+            <file>$TOOLKIT_DIR$\src\template\cfg3soim.xcl</file>
+            <file>$TOOLKIT_DIR$\inc\iom324pb.h</file>
+            <file>$PROJ_DIR$\Debug\List\main.i</file>
+            <file>$TOOLKIT_DIR$\inc\iomacro.h</file>
+            <file>$PROJ_DIR$\Debug\List\sos.i</file>
+            <file>$TOOLKIT_DIR$\inc\bitdefinitions\iom324pb.inc</file>
+            <file>$PROJ_DIR$\Debug\List\led.i</file>
+            <file>$PROJ_DIR$\Debug\Exe\362.d90</file>
+            <file>$PROJ_DIR$\Debug\Obj\btn.r90</file>
+            <file>$PROJ_DIR$\Debug\Obj\cpanel.r90</file>
+            <file>$PROJ_DIR$\Debug\Obj\gpio.r90</file>
+            <file>$PROJ_DIR$\Debug\Obj\pins.r90</file>
+            <file>$PROJ_DIR$\Debug\Obj\adc.r90</file>
+            <file>$PROJ_DIR$\Debug\Obj\led.r90</file>
+            <file>$PROJ_DIR$\Debug\Obj\sos.r90</file>
+            <file>$PROJ_DIR$\main.c</file>
+            <file>$PROJ_DIR$\..\35x\pins.h</file>
+            <file>$PROJ_DIR$\..\35x\gpio.h</file>
+            <file>$PROJ_DIR$\..\35x\cpanel.h</file>
+            <file>$PROJ_DIR$\..\35x\gpio.c</file>
+            <file>$PROJ_DIR$\..\35x\led.c</file>
+            <file>$PROJ_DIR$\..\35x\cpanel.c</file>
+            <file>$PROJ_DIR$\..\35x\led.h</file>
+            <file>$PROJ_DIR$\..\35x\btn.h</file>
+            <file>$PROJ_DIR$\..\35x\btn.c</file>
+            <file>$PROJ_DIR$\..\35x\pins.c</file>
+            <file>$PROJ_DIR$\adc.c</file>
+            <file>$PROJ_DIR$\adc.h</file>
+            <file>$PROJ_DIR$\gpio.c</file>
+            <file>$PROJ_DIR$\led.c</file>
+            <file>$PROJ_DIR$\gpio.h</file>
+            <file>$PROJ_DIR$\led.h</file>
+            <file>$PROJ_DIR$\pins.c</file>
+            <file>$PROJ_DIR$\pins.h</file>
+            <file>$PROJ_DIR$\sos.c</file>
+            <file>$PROJ_DIR$\sos.h</file>
+            <file>$PROJ_DIR$\cpanel.h</file>
+            <file>$PROJ_DIR$\cpanel.c</file>
+            <file>$PROJ_DIR$\btn.h</file>
+            <file>$PROJ_DIR$\btn.c</file>
+        </outputs>
+        <file>
+            <name>$PROJ_DIR$\Debug\Exe\362.d90</name>
+            <outputs>
+                <tool>
+                    <name>XLINK</name>
+                    <file> 2</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>XLINK</name>
+                    <file> 9 10 22 18 19 20 23 0 21 24 5</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>XLINK</name>
+                    <file> 17 2</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\main.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCAVR</name>
+                    <file> 12 0</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCAVR</name>
+                    <file> 11 13 15 41 43 37</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\adc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCAVR</name>
+                    <file> 1 22</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCAVR</name>
+                    <file> 37 11 13 15</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\gpio.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCAVR</name>
+                    <file> 6 20</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCAVR</name>
+                    <file> 40 11 13 15</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\led.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCAVR</name>
+                    <file> 16 23</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCAVR</name>
+                    <file> 41 11 13 15 43 40</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\pins.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCAVR</name>
+                    <file> 7 21</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCAVR</name>
+                    <file> 43 11 13 15</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\sos.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCAVR</name>
+                    <file> 14 24</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCAVR</name>
+                    <file> 41 11 13 15 43 40 45</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\cpanel.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCAVR</name>
+                    <file> 3 19</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCAVR</name>
+                    <file> 46 11 13 15 43 48 41 40</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\btn.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCAVR</name>
+                    <file> 4 18</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCAVR</name>
+                    <file> 48 11 13 15 40 43</file>
+                </tool>
+            </inputs>
+        </file>
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>XLINK</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\main.c</name>
+            <tool>ICCAVR</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>[REBUILD_ALL]</name>
+        </forcedrebuild>
+    </configuration>
+    <configuration>
+        <name>Release</name>
+        <outputs />
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>XLINK</tool>
+        </forcedrebuild>
+    </configuration>
+</project>

@@ -1,0 +1,17 @@
+# ninja log v5
+1	747	7113098379254004	B:/MQ_Summer_Internship_2023/Project/362/Debug/Obj/adc.r90	722d71e2e6c9ea43
+32	783	7113098379421022	B:/MQ_Summer_Internship_2023/Project/362/Debug/Obj/gpio.r90	a7725cea069b3108
+749	1370	7113098386085887	B:/MQ_Summer_Internship_2023/Project/362/Debug/Obj/cpanel.r90	fe6cfd823ea3f6c4
+787	1417	7113098386421705	B:/MQ_Summer_Internship_2023/Project/362/Debug/Obj/btn.r90	c43f6cbfcbdcddf6
+1374	1677	7113098389088180	B:/MQ_Summer_Internship_2023/Project/362/Debug/Obj/main.r90	ed84b9f09950b12e
+1421	1798	7113098390088272	B:/MQ_Summer_Internship_2023/Project/362/Debug/Obj/led.r90	a3b62c3cccb994bb
+1680	2014	7113098392251747	B:/MQ_Summer_Internship_2023/Project/362/Debug/Obj/sos.r90	c4bfdcab4082cfc6
+1801	2101	7113098393251924	B:/MQ_Summer_Internship_2023/Project/362/Debug/Obj/pins.r90	7ebb2ad896cedc89
+2104	2394	7113098396249456	B:/MQ_Summer_Internship_2023/Project/362/Debug/Exe/362.d90	2cb50e4228172ab1
+7	256	7113098946764276	B:/MQ_Summer_Internship_2023/Project/362/Debug/Obj/led.r90	a3b62c3cccb994bb
+258	473	7113098948930288	B:/MQ_Summer_Internship_2023/Project/362/Debug/Exe/362.d90	2cb50e4228172ab1
+7	1076	7113102990150322	B:/MQ_Summer_Internship_2023/Project/362/Debug/Obj/cpanel.r90	fe6cfd823ea3f6c4
+62	1159	7113102990817061	B:/MQ_Summer_Internship_2023/Project/362/Debug/Obj/sos.r90	c4bfdcab4082cfc6
+1078	1507	7113102994982120	B:/MQ_Summer_Internship_2023/Project/362/Debug/Obj/main.r90	ed84b9f09950b12e
+1163	1562	7113102995483862	B:/MQ_Summer_Internship_2023/Project/362/Debug/Obj/led.r90	a3b62c3cccb994bb
+1565	1777	7113102997765591	B:/MQ_Summer_Internship_2023/Project/362/Debug/Exe/362.d90	2cb50e4228172ab1
