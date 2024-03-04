@@ -3,6 +3,7 @@
 This project involves designing a prototype for a central control panel in a car, integrating an OLED1 extension board to control HVAC vents. The vents are positioned to direct airflow in three directions: left, central, and right. Each vent has a corresponding button and LED on the OLED1 board, providing visual confirmation to the driver about the enabled function of each vent.
 
 ## Requirements
+## 33x - first version of this software
 
 ### Button Behavior
 
@@ -17,3 +18,8 @@ This project involves designing a prototype for a central control panel in a car
 - Pressing any vent control button during the blocked state has no effect on vents and LED indicators (they stay OFF).
 - Pressing any vent control button during the blocked state results in fast blinking LED0, indicating that the panel is blocked.
 - To unblock the panel, the SW0 master control must be pressed again.
+
+## 541 - second version of this software
+
+- Introduce task scheduler for handling of buttons and LEDs behavior
+- Use debounce algorithm for a stable state of buttons 

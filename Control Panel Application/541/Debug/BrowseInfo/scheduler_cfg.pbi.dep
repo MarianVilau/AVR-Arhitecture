@@ -1,0 +1,18 @@
+B:\MQ_Summer_Internship_2023\Project\541\Debug\BrowseInfo\scheduler_cfg.pbi: \
+  B:\MQ_Summer_Internship_2023\Project\541\scheduler_cfg.c \
+  B:\MQ_Summer_Internship_2023\Project\541\scheduler.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.1\avr\inc\iom324pb.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.1\avr\inc\iomacro.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.1\avr\inc\bitdefinitions\iom324pb.inc \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.1\avr\inc\dlib\c\stddef.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.1\avr\inc\dlib\c\ycheck.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.1\avr\inc\dlib\c\yvals.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.1\avr\inc\dlib\c\DLib_Defaults.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.1\avr\inc\dlib\c\DLib_Config_Normal.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.1\avr\inc\dlib\c\DLib_Product.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.1\avr\inc\dlib\c\ysizet.h \
+  B:\MQ_Summer_Internship_2023\Project\541\led.h \
+  B:\MQ_Summer_Internship_2023\Project\541\pins.h \
+  B:\MQ_Summer_Internship_2023\Project\541\adc.h \
+  B:\MQ_Summer_Internship_2023\Project\541\cpanel.h \
+  B:\MQ_Summer_Internship_2023\Project\541\btn.h

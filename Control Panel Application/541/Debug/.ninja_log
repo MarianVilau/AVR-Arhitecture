@@ -1,0 +1,27 @@
+# ninja log v5
+0	258	7121875041834695	B:/MQ_Summer_Internship_2023/Project/541/Debug/Obj/cpanel.r90	b74238240cf32b65
+2	229	7121875276637478	B:/MQ_Summer_Internship_2023/Project/541/Debug/Obj/cpanel.r90	b74238240cf32b65
+3	1133	7121879661100667	B:/MQ_Summer_Internship_2023/Project/541/Debug/Obj/btn.r90	f4e87be8616f97ff
+22	1159	7121879661409825	B:/MQ_Summer_Internship_2023/Project/541/Debug/Obj/gpio.r90	d29c6b48c7c82c93
+1163	2120	7121879671658827	B:/MQ_Summer_Internship_2023/Project/541/Debug/Obj/adc.r90	2cb26447333f2118
+1136	2145	7121879671529170	B:/MQ_Summer_Internship_2023/Project/541/Debug/Obj/cpanel.r90	b74238240cf32b65
+2149	2541	7121879676019647	B:/MQ_Summer_Internship_2023/Project/541/Debug/Obj/pins.r90	d4f5a5503df0e608
+2124	2694	7121879677173227	B:/MQ_Summer_Internship_2023/Project/541/Debug/Obj/sos.r90	bf4b0b8c8acd45c9
+2545	3131	7121879681910546	B:/MQ_Summer_Internship_2023/Project/541/Debug/Obj/led.r90	4aebcb259d2140d1
+2698	3396	7121879684344940	B:/MQ_Summer_Internship_2023/Project/541/Debug/Obj/scheduler_cfg.r90	13f1266654074d60
+3400	3885	7121879688989410	B:/MQ_Summer_Internship_2023/Project/541/Debug/Obj/main.r90	537ed7bae071625c
+3782	4196	7121879692494463	B:/MQ_Summer_Internship_2023/Project/541/Debug/Obj/timmer.r90	edca4a4f4c463e19
+21	1223	7121885265291684	B:/MQ_Summer_Internship_2023/Project/541/Debug/Obj/scheduler_cfg.r90	13f1266654074d60
+1002	1395	7121885268423338	B:/MQ_Summer_Internship_2023/Project/541/Debug/Obj/main.r90	537ed7bae071625c
+1	285	7121887154911931	B:/MQ_Summer_Internship_2023/Project/541/Debug/Obj/scheduler.r90	79aba745ba948dda
+2	216	7121887247438708	B:/MQ_Summer_Internship_2023/Project/541/Debug/Exe/541.d90	ad2c8e2d4e3a044
+21	1985	7126954788702864	B:/MQ_Summer_Internship_2023/Project/541/Debug/Obj/main.r90	537ed7bae071625c
+225	2022	7126954790596037	B:/MQ_Summer_Internship_2023/Project/541/Debug/Obj/scheduler_cfg.r90	13f1266654074d60
+2027	2525	7126954796080274	B:/MQ_Summer_Internship_2023/Project/541/Debug/Exe/541.d90	ad2c8e2d4e3a044
+7	269	7126955118986151	B:/MQ_Summer_Internship_2023/Project/541/Debug/Obj/main.r90	537ed7bae071625c
+271	766	7126955123598193	B:/MQ_Summer_Internship_2023/Project/541/Debug/Exe/541.d90	ad2c8e2d4e3a044
+6	455	7126955584934209	B:/MQ_Summer_Internship_2023/Project/541/Debug/Obj/scheduler.r90	79aba745ba948dda
+24	460	7126955585010935	B:/MQ_Summer_Internship_2023/Project/541/Debug/Obj/scheduler_cfg.r90	13f1266654074d60
+465	744	7126955587982633	B:/MQ_Summer_Internship_2023/Project/541/Debug/Exe/541.d90	ad2c8e2d4e3a044
+2	273	7126956403712626	B:/MQ_Summer_Internship_2023/Project/541/Debug/Obj/main.r90	537ed7bae071625c
+8	251	7126956486588542	B:/MQ_Summer_Internship_2023/Project/541/Debug/Exe/541.d90	ad2c8e2d4e3a044
