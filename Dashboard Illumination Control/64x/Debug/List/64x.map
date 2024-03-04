@@ -1,0 +1,792 @@
+###############################################################################
+#
+# IAR UBROF Linker V8.10.1.1784/W64 for Microchip AVR     04/Aug/2023  12:19:21
+# Copyright 2017-2023 IAR Systems AB.
+#
+#    Target Cpu    =  AVR
+#    Map file      =
+#        B:\MQ_Summer_Internship_2023\Project\64x\Debug\List\64x.map
+#    Output file 1 =
+#        B:\MQ_Summer_Internship_2023\Project\64x\Debug\Exe\64x.d90
+#                  =  Format: debug
+#                  =  UBROF version 12.0.0
+#                  =  Using library modules for C-SPY (-rt)
+#    Command line  =
+#        -f B:\MQ_Summer_Internship_2023\Project\64x\Debug\Exe\64x.d90.rsp
+#        (B:\MQ_Summer_Internship_2023\Project\64x\Debug\Obj\main.r90 --output
+#        B:\MQ_Summer_Internship_2023\Project\64x\Debug\Exe\64x.d90 -l
+#        B:\MQ_Summer_Internship_2023\Project\64x\Debug\List\64x.map -xaems
+#        "-IC:\Program Files\IAR Systems\Embedded Workbench 9.1\avr\lib\\" --f
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        9.1\avr/src/template/cfgm324pb.xcl" (-D_..X_INTVEC_SIZE=CC
+#        -D_..X_FLASH_END=7FFF -D_..X_FLASH_NEND=_..X_FLASH_END
+#        -D_..X_SRAM_BASE=100 -D_..X_SRAM_TBASE=0 -D_..X_SRAM_TSIZE=0
+#        -D_..X_SRAM_END=8FF -D_..X_EXT_SRAM_BASE=_..X_SRAM_END
+#        -D_..X_EXT_SRAM_SIZE=0 -D_..X_EXT_ROM_BASE=_..X_SRAM_END
+#        -D_..X_EXT_ROM_SIZE=0 -D_..X_EXT_NV_BASE=_..X_SRAM_END
+#        -D_..X_EXT_NV_SIZE=0 -D_..X_EEPROM_START=0 -D_..X_EEPROM_END=3FF)
+#        -D_..X_HEAP_SIZE=0 -D_..X_TINY_HEAP_SIZE=0 -D_..X_NEAR_HEAP_SIZE=20
+#        -D_..X_FAR_HEAP_SIZE=0 -D_..X_HUGE_HEAP_SIZE=0 -D_..X_CSTACK_SIZE=20
+#        -D_..X_RSTACK_SIZE=20 -D_..X_FLASH_CODE_END=_..X_FLASH_END --f
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        9.1\avr/src/template/cfg3soim.xcl" (-ca90 -w29
+#        "-Z(CODE)INTVEC=0-(_..X_INTVEC_SIZE-1)"
+#        "-Z(CODE)TINY_F=_..X_FLASH_BASE-FF"
+#        "-Z(CODE)NEAR_F=_..X_FLASH_BASE-_..X_FLASH_NEND"
+#        "-Z(CODE)SWITCH=_..X_FLASH_BASE-_..X_FLASH_NEND"
+#        "-Z(CODE)DIFUNCT=_..X_FLASH_BASE-_..X_FLASH_NEND"
+#        "-Z(CODE)CODE=_..X_FLASH_BASE-_..X_FLASH_END"
+#        "-P(CODE)FAR_F=[_..X_FLASH_BASE-_..X_FLASH_END]/10000"
+#        "-Z(CODE)INITTAB=_..X_FLASH_BASE-_..X_FLASH_END"
+#        "-Z(CODE)HUGE_F=_..X_FLASH_BASE-_..X_FLASH_END"
+#        "-Z(CODE).iar.locale_table,.iar.locale_encoding,__iar_tls$$INIT_DATA=_..X_FLASH_BASE-_..X_FLASH_END"
+#        "-Z(CODE)TINY_ID=_..X_FLASH_BASE-_..X_FLASH_END"
+#        "-Z(CODE)NEAR_ID=_..X_FLASH_BASE-_..X_FLASH_END"
+#        "-Z(CODE)CHECKSUM#_..X_FLASH_END"
+#        "-Z(DATA)TINY_I,TINY_Z,TINY_N=_..X_SRAM_TBASE:+_..X_SRAM_TSIZE"
+#        "-Z(DATA)CSTACK+_..X_CSTACK_SIZE=_..X_CSTACK_BASE-_..X_CSTACK_END"
+#        "-Z(DATA)HEAP+_..X_HEAP_SIZE=_..X_SRAM_BASE-_..X_SRAM_END"
+#        "-Z(DATA)IOSTREAM_N#_..X_SRAM_BASE-_..X_SRAM_END"
+#        "-Z(DATA)NEAR_HEAP+_..X_NEAR_HEAP_SIZE=_..X_SRAM_BASE-_..X_SRAM_END"
+#        "-Z(DATA)RSTACK+_..X_RSTACK_SIZE=_..X_RSTACK_BASE-_..X_RSTACK_END"
+#        "-Z(DATA)NEAR_I,NEAR_Z,NEAR_N=_..X_SRAM_BASE-_..X_SRAM_END"
+#        "-Z(DATA)__iar_tls$$DATA=_..X_SRAM_BASE-_..X_SRAM_END"
+#        "-Z(XDATA)EEPROM_I,EEPROM_N=_..X_EEPROM_START-_..X_EEPROM_END")
+#        -D_..X_FLASH_BASE=_..X_INTVEC_SIZE
+#        "-h'1895'(CODE)0-(_..X_INTVEC_SIZE-1)"
+#        -D_..X_CSTACK_BASE=_..X_SRAM_BASE -D_..X_CSTACK_END=_..X_SRAM_END
+#        -D_..X_RSTACK_BASE=_..X_SRAM_BASE -D_..X_RSTACK_END=_..X_SRAM_END -rt
+#        --entry __program_start --text_out locale)
+#
+###############################################################################
+
+
+
+
+
+
+                ****************************************
+                *                                      *
+                *            PROGRAM ENTRY             *
+                *                                      *
+                ****************************************
+
+  ADDRESS     SPACE  TYPE         MODULE
+  -------     -----  ----         ------
+  0x0000045E  CODE   Relocatable  ?C_STARTUP
+
+
+
+
+                ****************************************
+                *                                      *
+                *            RUNTIME MODEL             *
+                *                                      *
+                ****************************************
+
+  ATTRIBUTE                   VALUE
+  ---------                   -----
+  __64bit_doubles             disabled
+  __SystemLibrary             DLib
+  __architecture              *
+  __cpu                       3
+  __cpu_name                  ATmega324PB
+  __dlib_full_locale_support  0
+  __dlib_version              6
+  __enhanced_core             enabled
+  __enhanced_core_mul         enabled
+  __has_elpm                  false
+  __memory_model              2
+  __mex                       disabled
+  __rt_version                3
+  __tiny_avr                  false
+  __vtable_memory             __nearflash
+
+
+                ****************************************
+                *                                      *
+                *    AUTOMATIC SYMBOL REDIRECTIONS     *
+                *                                      *
+                ****************************************
+
+                   There are no automatic symbol redirections.
+
+
+
+                ****************************************
+                *                                      *
+                *   AUTOMATICALLY SELECTED LIBRARIES   *
+                *                                      *
+                ****************************************
+
+                  C:\Program Files\IAR Systems\Embedded Workbench 9.1\avr\lib\dlib\dlAVR-3s-ec_mul-sf-n.r90
+
+
+
+                ****************************************
+                *                                      *
+                *              ENTRY LIST              *
+                *                                      *
+                ****************************************
+
+ENTRY                        SPACE  ADDRESS     KIND  TYPE  MODULE
+-----                        -----  -------     ----  ----  ------
+_..X_HUGE_HEAP_SIZE          CODE   0x00000000  Pub         ?ABS_ENTRY_MOD [0]
+_..X_FAR_HEAP_SIZE           CODE   0x00000000  Pub         ?ABS_ENTRY_MOD [0]
+_..X_TINY_HEAP_SIZE          CODE   0x00000000  Pub         ?ABS_ENTRY_MOD [0]
+_..X_HEAP_SIZE               CODE   0x00000000  Pub         ?ABS_ENTRY_MOD [0]
+_..X_EEPROM_START            CODE   0x00000000  Pub         ?ABS_ENTRY_MOD [0]
+_..X_EXT_NV_SIZE             CODE   0x00000000  Pub         ?ABS_ENTRY_MOD [0]
+_..X_EXT_ROM_SIZE            CODE   0x00000000  Pub         ?ABS_ENTRY_MOD [0]
+_..X_EXT_SRAM_SIZE           CODE   0x00000000  Pub         ?ABS_ENTRY_MOD [0]
+_..X_SRAM_TSIZE              CODE   0x00000000  Pub         ?ABS_ENTRY_MOD [0]
+_..X_SRAM_TBASE              CODE   0x00000000  Pub         ?ABS_ENTRY_MOD [0]
+?RESET                       CODE   0x00000000  Pub         ?RESET [1]
+_..X_RSTACK_SIZE             CODE   0x00000020  Pub         ?ABS_ENTRY_MOD [0]
+_..X_CSTACK_SIZE             CODE   0x00000020  Pub         ?ABS_ENTRY_MOD [0]
+_..X_NEAR_HEAP_SIZE          CODE   0x00000020  Pub         ?ABS_ENTRY_MOD [0]
+TIMER1_OVF_ISR::??INTVEC 60  CODE   0x0000003C  Pub         main
+_..X_FLASH_BASE              CODE   0x000000CC  Pub         ?ABS_ENTRY_MOD [0]
+_..X_INTVEC_SIZE             CODE   0x000000CC  Pub         ?ABS_ENTRY_MOD [0]
+adc_init                     CODE   0x000000CC  Pub   Code  main
+_..X_RSTACK_BASE             CODE   0x00000100  Pub         ?ABS_ENTRY_MOD [0]
+_..X_CSTACK_BASE             CODE   0x00000100  Pub         ?ABS_ENTRY_MOD [0]
+_..X_SRAM_BASE               CODE   0x00000100  Pub         ?ABS_ENTRY_MOD [0]
+read_light_intensity         CODE   0x0000011C  Pub   Code  main
+pwm_init                     CODE   0x00000158  Pub   Code  main
+pwm_set_duty_cycle           CODE   0x000001C8  Pub   Code  main
+set_day_mode                 CODE   0x000001EE  Pub   Code  main
+entry_phase                  CODE   0x000001F4  Pub   Code  main
+debounce_button              CODE   0x00000390  Pub   Code  main
+TIMER1_OVF_ISR               CODE   0x000003E6  Pub   Code  main
+_..X_EEPROM_END              CODE   0x000003FF  Pub         ?ABS_ENTRY_MOD [0]
+main                         CODE   0x00000400  Pub   Code  main
+__DebugBreak                 CODE   0x00000442  Pub   Code  ?__dbg_break [1]
+__exit                       CODE   0x00000444  Pub   Code  ?__exit [1]
+_exit                        CODE   0x0000045A  Pub   Code  ?_exit [1]
+__program_start              CODE   0x0000045E  Pub         ?C_STARTUP [1]
+?C_STARTUP                   CODE   0x0000045E  Pub         ?C_STARTUP [1]
+__RESTART                    CODE   0x0000045E  Pub         ?C_STARTUP [1]
+?call_low_level_init         CODE   0x0000046A  Pub         ?C_STARTUP [1]
+?need_segment_init           CODE   0x0000046E  Pub         ?C_STARTUP [1]
+?cstartup_call_main          CODE   0x00000476  Pub         ?C_STARTUP [1]
+exit                         CODE   0x00000482  Pub   Code  ?exit [1]
+?C_SHL_L01                   CODE   0x00000486  Pub         ?C_SHL_L01 [1]
+?UC_SHR_L01                  CODE   0x00000490  Pub         ?UC_SHR_L01 [1]
+?S_EC_MUL_L02                CODE   0x0000049A  Pub         ?S_EC_MUL_L02 [1]
+?S_SHL_L02                   CODE   0x000004AE  Pub         ?S_SHL_L02 [1]
+?US_DIVMOD_L02               CODE   0x000004B4  Pub         ?US_DIVMOD_L02 [1]
+?SS_DIVMOD_L02               CODE   0x000004DA  Pub         ?SS_DIVMOD_L02 [1]
+?NEG_P                       CODE   0x000004FA  Loc         ?SS_DIVMOD_L02 [1]
+?NEG_Q                       CODE   0x00000502  Loc         ?SS_DIVMOD_L02 [1]
+?UL_SHR_L03                  CODE   0x00000512  Pub         ?UL_SHR_L03 [1]
+?L_NEG_L03                   CODE   0x00000518  Pub         ?SL_DIVMOD_L03 [1]
+?F_UNPACK_L04                CODE   0x00000528  Pub         ?FLOATS_L04 [1]
+?F_UNPACK_1_L04              CODE   0x00000538  Pub         ?FLOATS_L04 [1]
+?F_NORMALIZE_L04             CODE   0x0000054A  Loc         ?FLOATS_L04 [1]
+?F_ROUND_L04                 CODE   0x0000055E  Pub         ?FLOATS_L04 [1]
+?SL2F_2                      CODE   0x00000594  Loc         ?FLOATS_L04 [1]
+?UL2F_L04                    CODE   0x000005A2  Pub         ?FLOATS_L04 [1]
+?TEST_P_L04                  CODE   0x000005A6  Pub         ?FLOATS_L04 [1]
+?TEST_Q_L04                  CODE   0x000005D2  Pub         ?FLOATS_L04 [1]
+?F_ADD_L04                   CODE   0x00000610  Pub         ?FLOATS_L04 [1]
+?F_ZERO_L04                  CODE   0x0000068E  Pub         ?FLOATS_L04 [1]
+PX                           CODE   0x00000694  Loc         ?FLOATS_L04 [1]
+?F_INFINITE_L04              CODE   0x0000069A  Pub         ?FLOATS_L04 [1]
+?F_NAN_L04                   CODE   0x000006A2  Pub         ?FLOATS_L04 [1]
+?F_MUL_L04                   CODE   0x000006C2  Pub         ?FLOATS_L04 [1]
+?F_CMP_LT_L04                CODE   0x0000078C  Pub         ?FLOATS_L04 [1]
+?F_CMP_LT                    CODE   0x00000794  Loc         ?FLOATS_L04 [1]
+?F_DIV_L04                   CODE   0x000007DC  Pub         ?FLOATS_L04 [1]
+?F2SL_L04                    CODE   0x000008C2  Pub         ?FLOATS_L04 [1]
+?SKIP8                       CODE   0x000008D2  Loc         ?FLOATS_L04 [1]
+_..X_RSTACK_END              CODE   0x000008FF  Pub         ?ABS_ENTRY_MOD [0]
+_..X_CSTACK_END              CODE   0x000008FF  Pub         ?ABS_ENTRY_MOD [0]
+_..X_EXT_NV_BASE             CODE   0x000008FF  Pub         ?ABS_ENTRY_MOD [0]
+_..X_EXT_ROM_BASE            CODE   0x000008FF  Pub         ?ABS_ENTRY_MOD [0]
+_..X_EXT_SRAM_BASE           CODE   0x000008FF  Pub         ?ABS_ENTRY_MOD [0]
+_..X_SRAM_END                CODE   0x000008FF  Pub         ?ABS_ENTRY_MOD [0]
+__low_level_init             CODE   0x00000900  Pub   Code  ?low_level_init [1]
+__segment_init               CODE   0x00000904  Pub   Code  ?segment_init [1]
+?<Segment init: NEAR_Z>      CODE   0x00000942  Pub         main
+_..X_FLASH_CODE_END          CODE   0x00007FFF  Pub         ?ABS_ENTRY_MOD [0]
+_..X_FLASH_NEND              CODE   0x00007FFF  Pub         ?ABS_ENTRY_MOD [0]
+_..X_FLASH_END               CODE   0x00007FFF  Pub         ?ABS_ENTRY_MOD [0]
+__?EECR                      DATA   0x0000001F  Pub         main
+__?EEDR                      DATA   0x00000020  Pub         main
+__?EEARL                     DATA   0x00000021  Pub         main
+__?EEARH                     DATA   0x00000022  Pub         main
+_A_PINC                      DATA   0x00000026  Pub   Data  main
+PINC                         DATA   0x00000026  Loc         main
+_A_DDRD                      DATA   0x0000002A  Pub   Data  main
+DDRD                         DATA   0x0000002A  Loc         main
+_A_PORTD                     DATA   0x0000002B  Pub   Data  main
+PORTD                        DATA   0x0000002B  Loc         main
+_A_TCCR0A                    DATA   0x00000044  Pub   Data  main
+TCCR0A                       DATA   0x00000044  Loc         main
+_A_TCCR0B                    DATA   0x00000045  Pub   Data  main
+TCCR0B                       DATA   0x00000045  Loc         main
+_A_OCR0A                     DATA   0x00000047  Pub   Data  main
+OCR0A                        DATA   0x00000047  Loc         main
+_A_OCR0B                     DATA   0x00000048  Pub   Data  main
+OCR0B                        DATA   0x00000048  Loc         main
+_A_SREG                      DATA   0x0000005F  Pub   Data  main
+SREG                         DATA   0x0000005F  Loc         main
+_A_TIMSK1                    DATA   0x0000006F  Pub   Data  main
+TIMSK1                       DATA   0x0000006F  Loc         main
+_A_ADC                       DATA   0x00000078  Pub   Data  main
+ADC                          DATA   0x00000078  Loc         main
+ADCL                         DATA   0x00000078  Loc         main
+ADCH                         DATA   0x00000079  Loc         main
+_A_ADCSRA                    DATA   0x0000007A  Pub   Data  main
+ADCSRA                       DATA   0x0000007A  Loc         main
+_A_ADMUX                     DATA   0x0000007C  Pub   Data  main
+ADMUX                        DATA   0x0000007C  Loc         main
+_A_TCCR1B                    DATA   0x00000081  Pub   Data  main
+TCCR1B                       DATA   0x00000081  Loc         main
+_A_TCNT1                     DATA   0x00000084  Pub   Data  main
+TCNT1                        DATA   0x00000084  Loc         main
+TCNT1L                       DATA   0x00000084  Loc         main
+TCNT1H                       DATA   0x00000085  Loc         main
+dayMode                      DATA   0x00000140  Pub   Data  main
+lightIntensity               DATA   0x00000141  Pub   Data  main
+buttonState                  DATA   0x00000143  Pub   Data  main
+lastButtonState              DATA   0x00000144  Pub   Data  main
+lastDebounceTime             DATA   0x00000145  Pub   Data  main
+milliseconds                 DATA   0x00000147  Pub   Data  main
+
+[0] = Command line (linker generated)
+[1] = C:\Program Files\IAR Systems\Embedded Workbench 9.1\avr\lib\dlib\dlAVR-3s-ec_mul-sf-n.r90
+
+
+                ****************************************
+                *                                      *
+                *              MODULE MAP              *
+                *                                      *
+                ****************************************
+
+Linker generated:
+  Module: ?ABS_ENTRY_MOD
+
+      Absolute module symbols:
+        _..X_RSTACK_END      0x000008FF  Pub
+        _..X_RSTACK_BASE     0x00000100  Pub
+        _..X_CSTACK_END      0x000008FF  Pub
+        _..X_CSTACK_BASE     0x00000100  Pub
+        _..X_FLASH_BASE      0x000000CC  Pub
+        _..X_FLASH_CODE_END  0x00007FFF  Pub
+        _..X_RSTACK_SIZE     0x00000020  Pub
+        _..X_CSTACK_SIZE     0x00000020  Pub
+        _..X_HUGE_HEAP_SIZE  0x00000000  Pub
+        _..X_FAR_HEAP_SIZE   0x00000000  Pub
+        _..X_NEAR_HEAP_SIZE  0x00000020  Pub
+        _..X_TINY_HEAP_SIZE  0x00000000  Pub
+        _..X_HEAP_SIZE       0x00000000  Pub
+        _..X_EEPROM_END      0x000003FF  Pub
+        _..X_EEPROM_START    0x00000000  Pub
+        _..X_EXT_NV_SIZE     0x00000000  Pub
+        _..X_EXT_NV_BASE     0x000008FF  Pub
+        _..X_EXT_ROM_SIZE    0x00000000  Pub
+        _..X_EXT_ROM_BASE    0x000008FF  Pub
+        _..X_EXT_SRAM_SIZE   0x00000000  Pub
+        _..X_EXT_SRAM_BASE   0x000008FF  Pub
+        _..X_SRAM_END        0x000008FF  Pub
+        _..X_SRAM_TSIZE      0x00000000  Pub
+        _..X_SRAM_TBASE      0x00000000  Pub
+        _..X_SRAM_BASE       0x00000100  Pub
+        _..X_FLASH_NEND      0x00007FFF  Pub
+        _..X_FLASH_END       0x00007FFF  Pub
+        _..X_INTVEC_SIZE     0x000000CC  Pub
+**************************************************************
+File: B:\MQ_Summer_Internship_2023\Project\64x\Debug\Obj\main.r90
+  Module: main
+       Segment part 1, ABSOLUTE [root]
+       Address: DATA 0x00000084 Size: 0x2 Align: 1(0)
+       Ref by:   TIMER1_OVF_ISR
+      _A_TCNT1             0x00000084  Pub
+      TCNT1                0x00000084  Loc
+      TCNT1H               0x00000085  Loc
+      TCNT1L               0x00000084  Loc
+    --------------------------------------------------
+       Segment part 2, ABSOLUTE [root]
+       Address: DATA 0x00000081 Size: 0x1 Align: 1(0)
+       Ref by:   pwm_init
+      _A_TCCR1B            0x00000081  Pub
+      TCCR1B               0x00000081  Loc
+    --------------------------------------------------
+       Segment part 3, ABSOLUTE [root]
+       Address: DATA 0x0000007C Size: 0x1 Align: 1(0)
+       Ref by:   adc_init
+      _A_ADMUX             0x0000007C  Pub
+      ADMUX                0x0000007C  Loc
+    --------------------------------------------------
+       Segment part 4, ABSOLUTE [root]
+       Address: DATA 0x0000007A Size: 0x1 Align: 1(0)
+       Ref by:   read_light_intensity
+                 adc_init
+      _A_ADCSRA            0x0000007A  Pub
+      ADCSRA               0x0000007A  Loc
+    --------------------------------------------------
+       Segment part 5, ABSOLUTE [root]
+       Address: DATA 0x00000078 Size: 0x2 Align: 1(0)
+       Ref by:   read_light_intensity
+      _A_ADC               0x00000078  Pub
+      ADC                  0x00000078  Loc
+      ADCH                 0x00000079  Loc
+      ADCL                 0x00000078  Loc
+    --------------------------------------------------
+       Segment part 6, ABSOLUTE [root]
+       Address: DATA 0x0000006F Size: 0x1 Align: 1(0)
+       Ref by:   main
+                 pwm_init
+      _A_TIMSK1            0x0000006F  Pub
+      TIMSK1               0x0000006F  Loc
+    --------------------------------------------------
+       Segment part 7, ABSOLUTE [root]
+       Address: DATA 0x0000005F Size: 0x1 Align: 1(0)
+       Ref by:   main
+      _A_SREG              0x0000005F  Pub
+      SREG                 0x0000005F  Loc
+    --------------------------------------------------
+       Segment part 8, ABSOLUTE [root]
+       Address: DATA 0x00000048 Size: 0x1 Align: 1(0)
+       Ref by:   pwm_set_duty_cycle
+      _A_OCR0B             0x00000048  Pub
+      OCR0B                0x00000048  Loc
+    --------------------------------------------------
+       Segment part 9, ABSOLUTE [root]
+       Address: DATA 0x00000047 Size: 0x1 Align: 1(0)
+       Ref by:   pwm_set_duty_cycle
+      _A_OCR0A             0x00000047  Pub
+      OCR0A                0x00000047  Loc
+    --------------------------------------------------
+       Segment part 10, ABSOLUTE [root]
+       Address: DATA 0x00000045 Size: 0x1 Align: 1(0)
+       Ref by:   pwm_init
+      _A_TCCR0B            0x00000045  Pub
+      TCCR0B               0x00000045  Loc
+    --------------------------------------------------
+       Segment part 11, ABSOLUTE [root]
+       Address: DATA 0x00000044 Size: 0x1 Align: 1(0)
+       Ref by:   pwm_init
+      _A_TCCR0A            0x00000044  Pub
+      TCCR0A               0x00000044  Loc
+    --------------------------------------------------
+       Segment part 12, ABSOLUTE [root]
+       Address: DATA 0x0000002B Size: 0x1 Align: 1(0)
+       Ref by:   entry_phase
+      _A_PORTD             0x0000002B  Pub
+      PORTD                0x0000002B  Loc
+    --------------------------------------------------
+       Segment part 13, ABSOLUTE [root]
+       Address: DATA 0x0000002A Size: 0x1 Align: 1(0)
+       Ref by:   pwm_init
+      _A_DDRD              0x0000002A  Pub
+      DDRD                 0x0000002A  Loc
+    --------------------------------------------------
+       Segment part 14, ABSOLUTE [root]
+       Address: DATA 0x00000026 Size: 0x1 Align: 1(0)
+       Ref by:   debounce_button
+      _A_PINC              0x00000026  Pub
+      PINC                 0x00000026  Loc
+    --------------------------------------------------
+       Segment part 22, NEAR_Z
+       Address: DATA 0x00000140 Size: 0x1 Align: 1(0)
+       Ref by:   entry_phase
+                 set_day_mode
+      dayMode              0x00000140  Pub
+    --------------------------------------------------
+       Segment part 24, NEAR_Z
+       Address: DATA 0x00000141 Size: 0x2 Align: 1(0)
+       Ref by:   main
+                 entry_phase
+      lightIntensity       0x00000141  Pub
+    --------------------------------------------------
+       Segment part 25, NEAR_Z
+       Address: DATA 0x00000143 Size: 0x1 Align: 1(0)
+       Ref by:   debounce_button
+      buttonState          0x00000143  Pub
+    --------------------------------------------------
+       Segment part 26, NEAR_Z
+       Address: DATA 0x00000144 Size: 0x1 Align: 1(0)
+       Ref by:   debounce_button
+      lastButtonState      0x00000144  Pub
+    --------------------------------------------------
+       Segment part 27, NEAR_Z
+       Address: DATA 0x00000145 Size: 0x2 Align: 1(0)
+       Ref by:   debounce_button
+      lastDebounceTime     0x00000145  Pub
+    --------------------------------------------------
+       Segment part 28, NEAR_Z
+       Address: DATA 0x00000147 Size: 0x2 Align: 1(0)
+       Ref by:   debounce_button
+                 entry_phase
+      milliseconds         0x00000147  Pub
+    --------------------------------------------------
+       Segment part 29, CODE
+       Address: CODE 0x000000CC Size: 0x50 Align: 2(1)
+       Ref by:   main
+      adc_init             0x000000CC  Pub
+    --------------------------------------------------
+       Segment part 30, CODE
+       Address: CODE 0x0000011C Size: 0x3C Align: 2(1)
+       Ref by:   main
+                 entry_phase
+      read_light_intensity  0x0000011C  Pub
+    --------------------------------------------------
+       Segment part 31, CODE
+       Address: CODE 0x00000158 Size: 0x70 Align: 2(1)
+       Ref by:   main
+      pwm_init             0x00000158  Pub
+    --------------------------------------------------
+       Segment part 32, CODE
+       Address: CODE 0x000001C8 Size: 0x26 Align: 2(1)
+       Ref by:   entry_phase
+      pwm_set_duty_cycle   0x000001C8  Pub
+    --------------------------------------------------
+       Segment part 33, CODE
+       Address: CODE 0x000001EE Size: 0x6 Align: 2(1)
+       Ref by:   main
+      set_day_mode         0x000001EE  Pub
+    --------------------------------------------------
+       Segment part 34, CODE
+       Address: CODE 0x000001F4 Size: 0x19C Align: 2(1)
+       Ref by:   main
+                 debounce_button
+      entry_phase          0x000001F4  Pub
+    --------------------------------------------------
+       Segment part 35, CODE
+       Address: CODE 0x00000390 Size: 0x56 Align: 2(1)
+       Ref by:   main
+      debounce_button      0x00000390  Pub
+    --------------------------------------------------
+       Segment part 36, CODE
+       Address: CODE 0x000003E6 Size: 0x1A Align: 2(1)
+       Ref by:   TIMER1_OVF_ISR::??INTVEC 60
+      TIMER1_OVF_ISR       0x000003E6  Pub
+    --------------------------------------------------
+       Segment part 37, CODE
+       Address: CODE 0x00000400 Size: 0x42 Align: 2(1)
+      main                 0x00000400  Pub  Ref by:   ?cstartup_call_main (?C_STARTUP)
+    --------------------------------------------------
+       Segment part 15, ABSOLUTE [root]
+       Address: DATA 0x0000001F Size: 0x0 Align: 1(0)
+      __?EECR              0x0000001F  Pub
+    --------------------------------------------------
+       Segment part 16, ABSOLUTE [root]
+       Address: DATA 0x00000020 Size: 0x0 Align: 1(0)
+      __?EEDR              0x00000020  Pub
+    --------------------------------------------------
+       Segment part 17, ABSOLUTE [root]
+       Address: DATA 0x00000021 Size: 0x0 Align: 1(0)
+      __?EEARL             0x00000021  Pub
+    --------------------------------------------------
+       Segment part 18, ABSOLUTE [root]
+       Address: DATA 0x00000022 Size: 0x0 Align: 1(0)
+      __?EEARH             0x00000022  Pub
+    --------------------------------------------------
+       Segment part 19, INTVEC [root]
+       Address: CODE 0x00000000 Size: 0x40 Align: 2(1)
+      TIMER1_OVF_ISR::??INTVEC 60  0x0000003C  Pub
+    --------------------------------------------------
+       Segment part 23, INITTAB
+       Address: CODE 0x00000942 Size: 0x6 Align: 1(0)
+       Ref by:   dayMode
+                 lightIntensity
+                 buttonState
+                 lastButtonState
+                 lastDebounceTime
+                 milliseconds
+      ?<Segment init: NEAR_Z>  0x00000942  Pub
+**************************************************************
+File: C:\Program Files\IAR Systems\Embedded Workbench 9.1\avr\lib\dlib\dlAVR-3s-ec_mul-sf-n.r90
+  Module: ?__dbg_break
+       Segment part 3, CODE
+       Address: CODE 0x00000442 Size: 0x2 Align: 2(1)
+      __DebugBreak         0x00000442  Pub  Ref by:   __exit (?__exit)
+  ============================================================
+  Module: ?__exit
+       Segment part 3, CODE
+       Address: CODE 0x00000444 Size: 0x16 Align: 2(1)
+      __exit               0x00000444  Pub  Ref by:   Segment part 6 (?_exit)
+  ============================================================
+  Module: ?_exit
+       Segment part 0, CODE
+       Address: CODE 0x0000045A Size: 0x0 Align: 2(1)
+      _exit                0x0000045A  Pub  Ref by:   exit (?exit)
+                                                      ?cstartup_call_main (?C_STARTUP)
+    --------------------------------------------------
+       Segment part 6, CODE
+       Address: CODE 0x0000045A Size: 0x4 Align: 2(1)
+       Ref by:   _exit
+  ============================================================
+  Module: ?RESET
+       Segment part 0, INTVEC [root]
+       Address: CODE 0x00000000 Size: 0x4 Align: 2(1)
+      ?RESET               0x00000000  Pub  Ref by:   Segment part 2 (?C_STARTUP)
+  ============================================================
+  Module: ?C_STARTUP
+       Segment part 2, CODE
+       Address: CODE 0x0000045E Size: 0x0 Align: 2(1)
+      __program_start      0x0000045E  Pub  Ref by:   Absolute parts (?ABS_ENTRY_MOD)
+      ?C_STARTUP           0x0000045E  Pub  Ref by:   ?RESET (?RESET)
+      __RESTART            0x0000045E  Pub
+    --------------------------------------------------
+       Segment part 5, CODE
+       Address: CODE 0x0000045E Size: 0xC Align: 2(1)
+       Ref by:   Segment part 2
+    --------------------------------------------------
+       Segment part 7, CODE
+       Address: CODE 0x0000046A Size: 0x4 Align: 2(1)
+       Ref by:   Segment part 5
+      ?call_low_level_init  0x0000046A  Pub
+    --------------------------------------------------
+       Segment part 8, CODE
+       Address: CODE 0x0000046E Size: 0x8 Align: 2(1)
+      ?need_segment_init   0x0000046E  Pub  Ref by:   ?<Segment init: NEAR_Z> (main)
+    --------------------------------------------------
+       Segment part 11, CODE
+       Address: CODE 0x00000476 Size: 0xC Align: 2(1)
+       Ref by:   ?call_low_level_init
+      ?cstartup_call_main  0x00000476  Pub
+  ============================================================
+  Module: ?exit
+       Segment part 3, CODE
+       Address: CODE 0x00000482 Size: 0x4 Align: 2(1)
+      exit                 0x00000482  Pub  Ref by:   ?cstartup_call_main (?C_STARTUP)
+  ============================================================
+  Module: ?C_SHL_L01
+       Segment part 0, CODE
+       Address: CODE 0x00000486 Size: 0xA Align: 2(1)
+      ?C_SHL_L01           0x00000486  Pub  Ref by:   main (main)
+                                                      pwm_init (main)
+                                                      read_light_intensity (main)
+                                                      adc_init (main)
+  ============================================================
+  Module: ?UC_SHR_L01
+       Segment part 0, CODE
+       Address: CODE 0x00000490 Size: 0xA Align: 2(1)
+      ?UC_SHR_L01          0x00000490  Pub  Ref by:   read_light_intensity (main)
+  ============================================================
+  Module: ?S_EC_MUL_L02
+       Segment part 0, CODE
+       Address: CODE 0x0000049A Size: 0x10 Align: 2(1)
+      ?S_EC_MUL_L02        0x0000049A  Pub  Ref by:   entry_phase (main)
+  ============================================================
+  Module: ?S_SHL_L02
+       Segment part 0, CODE
+       Address: CODE 0x000004AA Size: 0xA Align: 2(1)
+      ?S_SHL_L02           0x000004AE  Pub  Ref by:   entry_phase (main)
+  ============================================================
+  Module: ?US_DIVMOD_L02
+       Segment part 1, CODE
+       Address: CODE 0x000004B4 Size: 0x6 Align: 2(1)
+      ?US_DIVMOD_L02       0x000004B4  Pub  Ref by:   ?SS_DIVMOD_L02 (?SS_DIVMOD_L02)
+                                                      entry_phase (main)
+    --------------------------------------------------
+       Segment part 3, CODE
+       Address: CODE 0x000004BA Size: 0x20 Align: 2(1)
+       Ref by:   ?US_DIVMOD_L02
+  ============================================================
+  Module: ?SS_DIVMOD_L02
+       Segment part 1, CODE
+       Address: CODE 0x000004DA Size: 0x20 Align: 2(1)
+      ?SS_DIVMOD_L02       0x000004DA  Pub  Ref by:   pwm_set_duty_cycle (main)
+    --------------------------------------------------
+       Segment part 2, CODE
+       Address: CODE 0x000004FA Size: 0x8 Align: 2(1)
+       Ref by:   ?SS_DIVMOD_L02
+      ?NEG_P               0x000004FA  Loc
+    --------------------------------------------------
+       Segment part 3, CODE
+       Address: CODE 0x00000502 Size: 0x8 Align: 2(1)
+       Ref by:   ?SS_DIVMOD_L02
+      ?NEG_Q               0x00000502  Loc
+  ============================================================
+  Module: ?UL_SHR_L03
+       Segment part 0, CODE
+       Address: CODE 0x0000050A Size: 0xE Align: 2(1)
+      ?UL_SHR_L03          0x00000512  Pub  Ref by:   ?SKIP8 (?FLOATS_L04)
+  ============================================================
+  Module: ?UL_DIVMOD_L03
+  ============================================================
+  Module: ?SL_DIVMOD_L03
+       Segment part 2, CODE
+       Address: CODE 0x00000518 Size: 0x10 Align: 2(1)
+      ?L_NEG_L03           0x00000518  Pub  Ref by:   ?SKIP8 (?FLOATS_L04)
+  ============================================================
+  Module: ?FLOATS_L04
+       Segment part 0, CODE
+       Address: CODE 0x00000528 Size: 0x10 Align: 2(1)
+       Ref by:   ?F_DIV_L04
+                 ?F_MUL_L04
+                 ?F_ADD_L04
+      ?F_UNPACK_L04        0x00000528  Pub
+    --------------------------------------------------
+       Segment part 1, CODE
+       Address: CODE 0x00000538 Size: 0x12 Align: 2(1)
+       Ref by:   ?F2SL_L04
+                 ?F_UNPACK_L04
+      ?F_UNPACK_1_L04      0x00000538  Pub
+    --------------------------------------------------
+       Segment part 2, CODE
+       Address: CODE 0x0000054A Size: 0x48 Align: 2(1)
+       Ref by:   ?F_DIV_L04
+                 ?F_MUL_L04
+                 ?F_ADD_L04
+                 ?SL2F_2
+      ?F_ROUND_L04         0x0000055E  Pub
+      ?F_NORMALIZE_L04     0x0000054A  Loc
+    --------------------------------------------------
+       Segment part 4, CODE
+       Address: CODE 0x00000592 Size: 0x2 Align: 2(1)
+       Ref by:   ?F_ROUND_L04
+    --------------------------------------------------
+       Segment part 6, CODE
+       Address: CODE 0x00000594 Size: 0xE Align: 2(1)
+       Ref by:   ?UL2F_L04
+      ?SL2F_2              0x00000594  Loc
+    --------------------------------------------------
+       Segment part 7, CODE
+       Address: CODE 0x000005A2 Size: 0x4 Align: 2(1)
+      ?UL2F_L04            0x000005A2  Pub  Ref by:   entry_phase (main)
+    --------------------------------------------------
+       Segment part 8, CODE
+       Address: CODE 0x000005A6 Size: 0x2C Align: 2(1)
+       Ref by:   ?F_DIV_L04
+                 ?F_CMP_LT_L04
+                 ?F_MUL_L04
+                 ?F_ADD_L04
+                 ?TEST_Q_L04
+      ?TEST_P_L04          0x000005A6  Pub
+    --------------------------------------------------
+       Segment part 9, CODE
+       Address: CODE 0x000005D2 Size: 0x1E Align: 2(1)
+       Ref by:   ?F_ADD_L04
+                 Segment part 16
+                 ?F_MUL_L04
+                 ?F_CMP_LT_L04
+                 ?F_CMP_LT
+                 ?F_DIV_L04
+      ?TEST_Q_L04          0x000005D2  Pub
+    --------------------------------------------------
+       Segment part 10, CODE
+       Address: CODE 0x000005F0 Size: 0x9E Align: 2(1)
+       Ref by:   Segment part 16
+      ?F_ADD_L04           0x00000610  Pub  Ref by:   entry_phase (main)
+    --------------------------------------------------
+       Segment part 12, CODE
+       Address: CODE 0x0000068E Size: 0x6 Align: 2(1)
+       Ref by:   ?F2SL_L04
+                 ?F_DIV_L04
+                 ?F_MUL_L04
+                 ?F_ADD_L04
+      ?F_ZERO_L04          0x0000068E  Pub
+    --------------------------------------------------
+       Segment part 13, CODE
+       Address: CODE 0x00000694 Size: 0x6 Align: 2(1)
+       Ref by:   ?F_NAN_L04
+                 ?F_INFINITE_L04
+                 ?F_ZERO_L04
+      PX                   0x00000694  Loc
+    --------------------------------------------------
+       Segment part 14, CODE
+       Address: CODE 0x0000069A Size: 0x8 Align: 2(1)
+       Ref by:   ?F_DIV_L04
+                 ?F_MUL_L04
+                 Segment part 4
+      ?F_INFINITE_L04      0x0000069A  Pub
+    --------------------------------------------------
+       Segment part 15, CODE
+       Address: CODE 0x000006A2 Size: 0x6 Align: 2(1)
+       Ref by:   ?F_DIV_L04
+                 ?F_MUL_L04
+                 Segment part 16
+                 ?F_ADD_L04
+      ?F_NAN_L04           0x000006A2  Pub
+    --------------------------------------------------
+       Segment part 16, CODE
+       Address: CODE 0x000006A8 Size: 0x1A Align: 2(1)
+       Ref by:   ?F_MUL_L04
+    --------------------------------------------------
+       Segment part 17, CODE
+       Address: CODE 0x000006C2 Size: 0xCA Align: 2(1)
+      ?F_MUL_L04           0x000006C2  Pub  Ref by:   entry_phase (main)
+    --------------------------------------------------
+       Segment part 19, CODE
+       Address: CODE 0x0000078C Size: 0x8 Align: 2(1)
+      ?F_CMP_LT_L04        0x0000078C  Pub  Ref by:   entry_phase (main)
+    --------------------------------------------------
+       Segment part 20, CODE
+       Address: CODE 0x00000794 Size: 0x28 Align: 2(1)
+       Ref by:   ?F_CMP_LT_L04
+      ?F_CMP_LT            0x00000794  Loc
+    --------------------------------------------------
+       Segment part 22, CODE
+       Address: CODE 0x000007BC Size: 0x106 Align: 2(1)
+      ?F_DIV_L04           0x000007DC  Pub  Ref by:   entry_phase (main)
+    --------------------------------------------------
+       Segment part 24, CODE
+       Address: CODE 0x000008C2 Size: 0x10 Align: 2(1)
+      ?F2SL_L04            0x000008C2  Pub  Ref by:   entry_phase (main)
+    --------------------------------------------------
+       Segment part 25, CODE
+       Address: CODE 0x000008D2 Size: 0x2E Align: 2(1)
+       Ref by:   ?F2SL_L04
+      ?SKIP8               0x000008D2  Loc
+  ============================================================
+  Module: ?low_level_init
+       Segment part 3, CODE
+       Address: CODE 0x00000900 Size: 0x4 Align: 2(1)
+      __low_level_init     0x00000900  Pub  Ref by:   ?call_low_level_init (?C_STARTUP)
+  ============================================================
+  Module: ?segment_init
+       Segment part 3, CODE
+       Address: CODE 0x00000904 Size: 0x3E Align: 2(1)
+      __segment_init       0x00000904  Pub  Ref by:   ?need_segment_init (?C_STARTUP)
+**************************************************************
+Linker generated:
+  Module: ?FILLER_BYTES
+       Segment part 1, INTVEC
+       Address: CODE 0x00000000 Size: 0x40 Align: 1(0)
+    --------------------------------------------------
+       Segment part 0, ?FILL1
+       Address: CODE 0x00000040 Size: 0x8C Align: 1(0)
+
+
+                ****************************************
+                *                                      *
+                *      SEGMENTS IN ADDRESS ORDER       *
+                *                                      *
+                ****************************************
+
+SEGMENT   SPACE     START/END ADDRESS      SIZE  TYPE  ALIGN
+-------   -----   ---------------------    ----  ----  -----
+INTVEC    CODE   0x00000000 - 0x0000003F   0x40   com   2(1)
+?FILL1    CODE   0x00000040 - 0x000000CB   0x8C   rel   1(0)
+CODE      CODE   0x000000CC - 0x00000941  0x876   rel   2(1)
+INITTAB   CODE   0x00000942 - 0x00000947    0x6   rel   1(0)
+CSTACK    DATA   0x00000100 - 0x0000011F   0x20   dse   1(0)
+RSTACK    DATA   0x00000120 - 0x0000013F   0x20   dse   1(0)
+NEAR_I    DATA         0x00000140                 dse   1(0)
+NEAR_Z    DATA   0x00000140 - 0x00000148    0x9   rel   1(0)
+ABSOLUTE  DATA         0x0000001F                 abs   1(0)
+          DATA         0x00000020
+          DATA         0x00000021
+          DATA         0x00000022
+          DATA   0x00000026 - 0x00000026    0x1
+          DATA   0x0000002A - 0x0000002B    0x2
+          DATA   0x00000044 - 0x00000045    0x2
+          DATA   0x00000047 - 0x00000048    0x2
+          DATA   0x0000005F - 0x0000005F    0x1
+          DATA   0x0000006F - 0x0000006F    0x1
+          DATA   0x00000078 - 0x0000007A    0x3
+          DATA   0x0000007C - 0x0000007C    0x1
+          DATA   0x00000081 - 0x00000081    0x1
+          DATA   0x00000084 - 0x00000085    0x2
+
+ 2'236 bytes of CODE memory (+             140 range fill )
+    73 bytes of DATA memory (+ 16 absolute )
+
+Errors: none
+Warnings: none
