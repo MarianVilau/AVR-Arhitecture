@@ -23,3 +23,14 @@ This project involves designing a prototype for a central control panel in a car
 
 - Introduce task scheduler for handling of buttons and LEDs behavior
 - Use debounce algorithm for a stable state of buttons 
+
+## 741 - third version of this software
+
+Refactor the code using the serial UART communication (simplex, that means one way) as follows:							
+	- imagine that on the physical microcontroller (ATmega324PB) we construct two virtual microcontrollers (MCU1 and MCU2)						
+	- these two virtual microcontrollers are connected by TX/RX line forming a simplex master-slave communication channel (MCU1 = master and MCU2 = slave)						
+	- all the buttons from your system will be read by virtual MCU1 via the physical pins of ATmega324PB						
+	- the buttons states are interpreted by virtual MCU1 and apropriate LEDs states are build and stored by virtual MCU1 but not executed						
+	- virtual MCU1 will send over UART protocol ( by TX physical pin) the appropriate data/commands for LEDs light on/off behavior						
+	- virtual MCU2 (the slave) will receive these data (by RX physical pin) and execute/implement the LEDs behavior as requested by virtual MCU1 (the master)						
+							
