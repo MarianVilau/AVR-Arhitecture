@@ -1,6 +1,6 @@
-**Requirements for Light Intensity-Responsive LED Control:**
+# Requirements for Light Intensity-Responsive LED Control:
 
-**362 - first version of this software**
+## 362 - first version of this software
 
 1. **Objective:**
    Implement a light intensity-responsive LED control system based on four predefined ADC readings intervals to enhance user experience in varying lighting conditions.
@@ -32,3 +32,43 @@
 
 7. **Compliance:**
    - The implemented solution should comply with the defined requirements, providing a reliable and user-friendly light intensity-responsive LED control system.
+
+## 52x - second version of this software
+
+
+**Overview**
+
+When considering an application as a sum of periodic events, it's beneficial to adopt a task-oriented design. This involves executing tasks based on time slices, facilitated by a task scheduler module.
+
+**Task Scheduler Module Reorganization**
+
+- **scheduler.c:**
+  - Contains `schedule_dispatcher` and `schedule_flags_management` functions.
+  - Acts as a collection of task scheduling logic.
+  
+- **scheduler.h:**
+  - Contains prototypes of provided functions.
+
+- **scheduler_cfg.c:**
+  - Contains initially empty task bodies.
+  - After deciding the corresponding functions to connect with each task, contains those function calls.
+  - Acts as a collection of task hooks.
+
+- **scheduler_cfg.h:**
+  - Contains prototypes of required functions.
+
+**Ambient Light Application Refactoring**
+
+**1. Encapsulation of Data Result in ADC Module**
+
+- Utilize the `static` keyword to encapsulate/hide data results within the ADC module.
+
+**2. Provide "Get" Interface/Function**
+
+- Implement a "get" interface/function (`adc_get_data()`) to access data results from other modules.
+
+**3. Task Scheduler Integration**
+
+- Leverage the task scheduler to schedule tasks related to ambient light indicator LEDs:
+  - Start of conversion.
+  - Obtaining and utilizing the data result.
