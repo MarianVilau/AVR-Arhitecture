@@ -1,0 +1,90 @@
+##IAR Ninja build file
+
+
+#Rules
+rule COMPILER_XCL
+  command = "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\common\bin\XclFileGenerator.exe" $xclcommand -f "$rspfile_name"
+  description = IAR_NEW_TOOL+++COMPILER_XCL+++$in
+  rspfile = $rspfile_name
+  rspfile_content = $flags
+
+rule INDEXER
+  command = "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\common\bin\SourceIndexer.exe" $flags
+  depfile = $out.dep
+  description = IAR_NEW_TOOL+++INDEXER+++$out
+
+rule MAKEBROWSE
+  command = "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\common\bin\makeBrowseData.exe" $flags
+  description = IAR_NEW_TOOL+++MAKEBROWSE+++$out
+
+rule PDBLINK
+  command = "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\common\bin\PbdLink.exe" $flags
+  description = IAR_NEW_TOOL+++PDBLINK+++$out
+
+
+
+#Build steps
+build B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\cpanel.xcl : COMPILER_XCL 
+  xclcommand = -source_file B$:\MQ_Summer_Internship_2023\Project\33x\cpanel.c -xcl_file B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\cpanel.xcl -macro_file B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\cpanel.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\avr\bin\iccavr.exe"
+  flags = B$:\MQ_Summer_Internship_2023\Project\33x\cpanel.c --cpu=m324pb -ms -o B$:\MQ_Summer_Internship_2023\Project\33x\Debug\Obj\ --preprocess B$:\MQ_Summer_Internship_2023\Project\33x\Debug\List\ --initializers_in_flash --no_cse --no_inline --no_code_motion --no_cross_call --no_clustering --no_tbaa --debug -e --eeprom_size 1024 --dlib --dlib_config DLib_Config_Normal.h -Ol --predef_macros B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\cpanel.tmp
+  rspfile_name = B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\cpanel.xcl.rsp
+
+build B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\gpio.xcl : COMPILER_XCL 
+  xclcommand = -source_file B$:\MQ_Summer_Internship_2023\Project\33x\gpio.c -xcl_file B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\gpio.xcl -macro_file B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\gpio.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\avr\bin\iccavr.exe"
+  flags = B$:\MQ_Summer_Internship_2023\Project\33x\gpio.c --cpu=m324pb -ms -o B$:\MQ_Summer_Internship_2023\Project\33x\Debug\Obj\ --preprocess B$:\MQ_Summer_Internship_2023\Project\33x\Debug\List\ --initializers_in_flash --no_cse --no_inline --no_code_motion --no_cross_call --no_clustering --no_tbaa --debug -e --eeprom_size 1024 --dlib --dlib_config DLib_Config_Normal.h -Ol --predef_macros B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\gpio.tmp
+  rspfile_name = B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\gpio.xcl.rsp
+
+build B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\led.xcl : COMPILER_XCL 
+  xclcommand = -source_file B$:\MQ_Summer_Internship_2023\Project\33x\led.c -xcl_file B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\led.xcl -macro_file B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\led.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\avr\bin\iccavr.exe"
+  flags = B$:\MQ_Summer_Internship_2023\Project\33x\led.c --cpu=m324pb -ms -o B$:\MQ_Summer_Internship_2023\Project\33x\Debug\Obj\ --preprocess B$:\MQ_Summer_Internship_2023\Project\33x\Debug\List\ --initializers_in_flash --no_cse --no_inline --no_code_motion --no_cross_call --no_clustering --no_tbaa --debug -e --eeprom_size 1024 --dlib --dlib_config DLib_Config_Normal.h -Ol --predef_macros B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\led.tmp
+  rspfile_name = B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\led.xcl.rsp
+
+build B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\main.xcl : COMPILER_XCL 
+  xclcommand = -source_file B$:\MQ_Summer_Internship_2023\Project\33x\main.c -xcl_file B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\main.xcl -macro_file B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\main.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\avr\bin\iccavr.exe"
+  flags = B$:\MQ_Summer_Internship_2023\Project\33x\main.c --cpu=m324pb -ms -o B$:\MQ_Summer_Internship_2023\Project\33x\Debug\Obj\ --preprocess B$:\MQ_Summer_Internship_2023\Project\33x\Debug\List\ --initializers_in_flash --no_cse --no_inline --no_code_motion --no_cross_call --no_clustering --no_tbaa --debug -e --eeprom_size 1024 --dlib --dlib_config DLib_Config_Normal.h -Ol --predef_macros B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\main.tmp
+  rspfile_name = B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\main.xcl.rsp
+
+build B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\pins.xcl : COMPILER_XCL 
+  xclcommand = -source_file B$:\MQ_Summer_Internship_2023\Project\33x\pins.c -xcl_file B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\pins.xcl -macro_file B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\pins.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\avr\bin\iccavr.exe"
+  flags = B$:\MQ_Summer_Internship_2023\Project\33x\pins.c --cpu=m324pb -ms -o B$:\MQ_Summer_Internship_2023\Project\33x\Debug\Obj\ --preprocess B$:\MQ_Summer_Internship_2023\Project\33x\Debug\List\ --initializers_in_flash --no_cse --no_inline --no_code_motion --no_cross_call --no_clustering --no_tbaa --debug -e --eeprom_size 1024 --dlib --dlib_config DLib_Config_Normal.h -Ol --predef_macros B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\pins.tmp
+  rspfile_name = B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\pins.xcl.rsp
+
+build B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\cpanel.pbi : INDEXER B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\cpanel.xcl |  $
+B$:\MQ_Summer_Internship_2023\Project\33x\cpanel.c
+  flags = -out=B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\cpanel.pbi -f B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\cpanel.xcl
+
+build B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\gpio.pbi : INDEXER B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\gpio.xcl |  $
+B$:\MQ_Summer_Internship_2023\Project\33x\gpio.c
+  flags = -out=B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\gpio.pbi -f B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\gpio.xcl
+
+build B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\led.pbi : INDEXER B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\led.xcl |  $
+B$:\MQ_Summer_Internship_2023\Project\33x\led.c
+  flags = -out=B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\led.pbi -f B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\led.xcl
+
+build B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\main.pbi : INDEXER B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\main.xcl |  $
+B$:\MQ_Summer_Internship_2023\Project\33x\main.c
+  flags = -out=B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\main.pbi -f B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\main.xcl
+
+build B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\pins.pbi : INDEXER B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\pins.xcl |  $
+B$:\MQ_Summer_Internship_2023\Project\33x\pins.c
+  flags = -out=B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\pins.pbi -f B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\pins.xcl
+
+build B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\33x.pbw : MAKEBROWSE B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\33x.pbd
+  flags = B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\33x.pbd -output B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\33x.pbw
+
+build B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\33x_part0.pbi : PDBLINK B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\cpanel.pbi |  $
+B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\gpio.pbi
+  flags = -M B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\33x_part0.pbi B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\cpanel.pbi B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\gpio.pbi
+
+build B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\33x_part1.pbi : PDBLINK B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\led.pbi |  $
+B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\main.pbi
+  flags = -M B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\33x_part1.pbi B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\led.pbi B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\main.pbi
+
+build B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\33x_part2.pbi : PDBLINK B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\pins.pbi
+  flags = -M B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\33x_part2.pbi B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\pins.pbi
+
+build B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\33x.pbd : PDBLINK B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\33x_part0.pbi |  $
+B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\33x_part1.pbi $
+B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\33x_part2.pbi
+  flags = -M B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\33x.pbd B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\33x_part0.pbi B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\33x_part1.pbi B$:\MQ_Summer_Internship_2023\Project\33x\Debug\BrowseInfo\33x_part2.pbi
+
